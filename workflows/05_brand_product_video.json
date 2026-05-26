@@ -1,0 +1,1604 @@
+{
+  "last_node_id": 25,
+  "last_link_id": 30,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "NanoBanana_APIKey",
+      "pos": [
+        50,
+        50
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "nb_api",
+        "Node name for S&R": "NanoBanana_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KlingDirect_Auth",
+      "pos": [
+        50,
+        174
+      ],
+      "size": [
+        320,
+        134
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "links": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "kling_auth",
+        "Node name for S&R": "KlingDirect_Auth"
+      },
+      "widgets_values": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ElevenLabsPro_APIKey",
+      "pos": [
+        50,
+        338
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            6,
+            7
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "el_api",
+        "Node name for S&R": "ElevenLabsPro_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "type": "NanoBanana_ImagenGen",
+      "pos": [
+        430,
+        50
+      ],
+      "size": [
+        320,
+        274
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "hero",
+        "Node name for S&R": "NanoBanana_ImagenGen"
+      },
+      "widgets_values": [
+        "imagen-4.0-generate-001",
+        "A sleek minimalist luxury watch on a polished black marble surface, professional product photography, dramatic side lighting, ultra-sharp focus, 8K commercial quality",
+        "",
+        1,
+        "1:1",
+        "",
+        -1,
+        "block_low_and_above",
+        "dont_allow"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "PreviewImage",
+      "pos": [
+        810,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 12
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "hero_prev",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "NanoBanana_ImageEdit",
+      "pos": [
+        1190,
+        50
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 13
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_3",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            17,
+            21
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "edit1",
+        "Node name for S&R": "NanoBanana_ImageEdit"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Change lighting to warm golden hour sunlight coming from the left, casting a long elegant shadow",
+        "",
+        "1:1",
+        "4K"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "NanoBanana_ImageEdit",
+      "pos": [
+        1190,
+        350
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 14
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_3",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            18,
+            22
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "edit2",
+        "Node name for S&R": "NanoBanana_ImageEdit"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Change background to deep ocean blue gradient, add subtle caustic light reflections on the watch face",
+        "",
+        "1:1",
+        "4K"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "NanoBanana_ImageEdit",
+      "pos": [
+        1190,
+        650
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_3",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            19,
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "edit3",
+        "Node name for S&R": "NanoBanana_ImageEdit"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Rotate the composition 45 degrees, add a luxury velvet red cushion underneath, cinematic vignette",
+        "",
+        "1:1",
+        "4K"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "NanoBanana_ImageEdit",
+      "pos": [
+        1190,
+        950
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 16
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "reference_image_3",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            20,
+            24
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "edit4",
+        "Node name for S&R": "NanoBanana_ImageEdit"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Place the watch outdoors on a rocky mountain peak at sunset, dramatic sky, ultra-realistic",
+        "",
+        "1:1",
+        "4K"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        154
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev2",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        258
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 19
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev3",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        362
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 20
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev4",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 14,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        50
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 8
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            25
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid1",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Slow elegant rotation, warm light sweeps across the watch face, luxury commercial style",
+        "shaky, blur, distortion",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 15,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        350
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 9
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 22
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            26
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid2",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Light caustics dance on the watch surface, gentle ripple effect, cinematic slow motion",
+        "shaky, blur, distortion",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 16,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        650
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 10
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            27
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid3",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Slow zoom into the watch dial, hands tick gracefully, luxury commercial close-up",
+        "shaky, blur, distortion",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 17,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        950
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 11
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 24
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            28
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid4",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Epic wide shot, sun sets behind the mountain, watch catches the final rays of light",
+        "shaky, blur, distortion",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ElevenLabsPro_SFX",
+      "pos": [
+        2330,
+        50
+      ],
+      "size": [
+        320,
+        234
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            29
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "sfx_whoosh",
+        "Node name for S&R": "ElevenLabsPro_SFX"
+      },
+      "widgets_values": [
+        "Elegant cinematic whoosh sound effect, smooth and polished, luxury brand feel",
+        "eleven_text_to_sound_v2",
+        2.0,
+        0.3,
+        false,
+        "mp3_44100_192",
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "type": "ElevenLabsPro_SFX",
+      "pos": [
+        2330,
+        314
+      ],
+      "size": [
+        320,
+        234
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            30
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "sfx_ambient",
+        "Node name for S&R": "ElevenLabsPro_SFX"
+      },
+      "widgets_values": [
+        "Subtle ambient background hum, high-end luxury product video atmosphere, very quiet, gentle",
+        "eleven_text_to_sound_v2",
+        10.0,
+        0.3,
+        false,
+        "mp3_44100_192",
+        0
+      ]
+    },
+    {
+      "id": 20,
+      "type": "PreviewAudio",
+      "pos": [
+        2710,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 29
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "whoosh_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "PreviewAudio",
+      "pos": [
+        2710,
+        154
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 30
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "ambient_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        578
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 25,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver1",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_brand_golden"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        736
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 26,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver2",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_brand_ocean"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        894
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 27,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver3",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_brand_velvet"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        1052
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 28,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver4",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_brand_mountain"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      1,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      1,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      1,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      3,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      3,
+      0,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      2,
+      0,
+      14,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      9,
+      2,
+      0,
+      15,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      10,
+      2,
+      0,
+      16,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      11,
+      2,
+      0,
+      17,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      12,
+      4,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      4,
+      0,
+      6,
+      1,
+      "IMAGE"
+    ],
+    [
+      14,
+      4,
+      0,
+      7,
+      1,
+      "IMAGE"
+    ],
+    [
+      15,
+      4,
+      0,
+      8,
+      1,
+      "IMAGE"
+    ],
+    [
+      16,
+      4,
+      0,
+      9,
+      1,
+      "IMAGE"
+    ],
+    [
+      17,
+      6,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      7,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      8,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      9,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      6,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      7,
+      0,
+      15,
+      1,
+      "IMAGE"
+    ],
+    [
+      23,
+      8,
+      0,
+      16,
+      1,
+      "IMAGE"
+    ],
+    [
+      24,
+      9,
+      0,
+      17,
+      1,
+      "IMAGE"
+    ],
+    [
+      25,
+      14,
+      3,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      26,
+      15,
+      3,
+      23,
+      0,
+      "STRING"
+    ],
+    [
+      27,
+      16,
+      3,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      28,
+      17,
+      3,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      18,
+      0,
+      20,
+      0,
+      "AUDIO"
+    ],
+    [
+      30,
+      19,
+      0,
+      21,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Setup",
+      "bounding": [
+        30,
+        0,
+        360,
+        452
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Hero Shot",
+      "bounding": [
+        410,
+        0,
+        740,
+        344
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Brand Variants",
+      "bounding": [
+        1170,
+        0,
+        740,
+        1240
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Animate",
+      "bounding": [
+        1930,
+        0,
+        360,
+        1240
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Soundscape",
+      "bounding": [
+        2310,
+        0,
+        740,
+        568
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Save Clips",
+      "bounding": [
+        2310,
+        528,
+        360,
+        672
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "description": "Complete brand product video production: Imagen 4 generates a photorealistic hero shot, Gemini ImageEdit produces 4 brand variations (different lighting/angles), Kling animates each into a 5-second clip, and ElevenLabs layers a whoosh SFX and ambient background.",
+    "title": "Masterwork \u2014 Brand Product Video",
+    "tier": 3,
+    "pack": "ComfyUI-IxMxAMAR-Masterworks"
+  },
+  "version": 0.4
+}

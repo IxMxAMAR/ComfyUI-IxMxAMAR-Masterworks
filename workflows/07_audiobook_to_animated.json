@@ -1,0 +1,1249 @@
+{
+  "last_node_id": 19,
+  "last_link_id": 24,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "ElevenLabsPro_APIKey",
+      "pos": [
+        50,
+        50
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "el_api",
+        "Node name for S&R": "ElevenLabsPro_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KlingDirect_Auth",
+      "pos": [
+        50,
+        174
+      ],
+      "size": [
+        320,
+        134
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "links": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "kling_auth",
+        "Node name for S&R": "KlingDirect_Auth"
+      },
+      "widgets_values": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        50,
+        338
+      ],
+      "size": [
+        320,
+        108
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17,
+            18,
+            19,
+            20
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "narrator_img",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        430,
+        50
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            9,
+            13
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "tts1",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "Chapter One. The old lighthouse had stood at the edge of Crestfall Bay for two hundred years, its beam sweeping the dark waters every twelve seconds. Maya had grown up counting those sweeps from her bedroom window, falling asleep to their steady rhythm.",
+        "21m00Tcm4TlvDq8ikWAM",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "type": "PreviewAudio",
+      "pos": [
+        810,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 9
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "KlingDirect_AvatarGen",
+      "pos": [
+        1190,
+        50
+      ],
+      "size": [
+        320,
+        190
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 5
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 17
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            21
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid1",
+        "Node name for S&R": "KlingDirect_AvatarGen"
+      },
+      "widgets_values": [
+        "Narrator reads calmly and expressively, gentle head movement, warm atmospheric lighting",
+        "pro",
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        1570,
+        50
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 21,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver1",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "audiobook_chapter_01"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        430,
+        528
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            10,
+            14
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "tts2",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "Chapter Two. The letter arrived on a Tuesday \u2014 stamped three times in red ink, the envelope worn as if it had travelled a very long way. Maya recognised her grandmother's handwriting immediately, though the old woman had been dead for seven years.",
+        "21m00Tcm4TlvDq8ikWAM",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 9,
+      "type": "PreviewAudio",
+      "pos": [
+        810,
+        154
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 10
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev2",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 10,
+      "type": "KlingDirect_AvatarGen",
+      "pos": [
+        1190,
+        270
+      ],
+      "size": [
+        320,
+        190
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 6
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid2",
+        "Node name for S&R": "KlingDirect_AvatarGen"
+      },
+      "widgets_values": [
+        "Narrator speaks with growing intrigue, slight lean forward, candlelight flickering on face",
+        "pro",
+        ""
+      ]
+    },
+    {
+      "id": 11,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        1570,
+        208
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver2",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "audiobook_chapter_02"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        430,
+        1006
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            11,
+            15
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "tts3",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "Chapter Three. Inside the lighthouse, hidden behind the clockwork mechanism, Maya found the second letter \u2014 and a brass key worn smooth by decades of handling. The key was cold, impossibly cold, even in her warm palm.",
+        "21m00Tcm4TlvDq8ikWAM",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 13,
+      "type": "PreviewAudio",
+      "pos": [
+        810,
+        258
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 11
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev3",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 14,
+      "type": "KlingDirect_AvatarGen",
+      "pos": [
+        1190,
+        490
+      ],
+      "size": [
+        320,
+        190
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 7
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid3",
+        "Node name for S&R": "KlingDirect_AvatarGen"
+      },
+      "widgets_values": [
+        "Narrator delivers with hushed tension, eyes slightly wide, shadow and mystery in the atmosphere",
+        "pro",
+        ""
+      ]
+    },
+    {
+      "id": 15,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        1570,
+        366
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver3",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "audiobook_chapter_03"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        430,
+        1484
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            12,
+            16
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "tts4",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "Chapter Four. The door at the base of the lighthouse had never opened in Maya's lifetime. But the key fit perfectly \u2014 and as the hinges ground open for the first time in decades, she understood at last what her grandmother had been protecting all those years.",
+        "21m00Tcm4TlvDq8ikWAM",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "PreviewAudio",
+      "pos": [
+        810,
+        362
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 12
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev4",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "KlingDirect_AvatarGen",
+      "pos": [
+        1190,
+        710
+      ],
+      "size": [
+        320,
+        190
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 8
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            24
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid4",
+        "Node name for S&R": "KlingDirect_AvatarGen"
+      },
+      "widgets_values": [
+        "Narrator concludes with gravitas and wonder, slow breath, meaningful pause before the final words",
+        "pro",
+        ""
+      ]
+    },
+    {
+      "id": 19,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        1570,
+        524
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 24,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver4",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "audiobook_chapter_04"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      1,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      0,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      1,
+      0,
+      16,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      2,
+      0,
+      6,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      6,
+      2,
+      0,
+      10,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      7,
+      2,
+      0,
+      14,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      8,
+      2,
+      0,
+      18,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      9,
+      4,
+      0,
+      5,
+      0,
+      "AUDIO"
+    ],
+    [
+      10,
+      8,
+      0,
+      9,
+      0,
+      "AUDIO"
+    ],
+    [
+      11,
+      12,
+      0,
+      13,
+      0,
+      "AUDIO"
+    ],
+    [
+      12,
+      16,
+      0,
+      17,
+      0,
+      "AUDIO"
+    ],
+    [
+      13,
+      4,
+      0,
+      6,
+      2,
+      "AUDIO"
+    ],
+    [
+      14,
+      8,
+      0,
+      10,
+      2,
+      "AUDIO"
+    ],
+    [
+      15,
+      12,
+      0,
+      14,
+      2,
+      "AUDIO"
+    ],
+    [
+      16,
+      16,
+      0,
+      18,
+      2,
+      "AUDIO"
+    ],
+    [
+      17,
+      3,
+      0,
+      6,
+      1,
+      "IMAGE"
+    ],
+    [
+      18,
+      3,
+      0,
+      10,
+      1,
+      "IMAGE"
+    ],
+    [
+      19,
+      3,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
+      3,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      21,
+      6,
+      3,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      22,
+      10,
+      3,
+      11,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      14,
+      3,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      18,
+      3,
+      19,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Setup",
+      "bounding": [
+        30,
+        0,
+        360,
+        466
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Chapter 1",
+      "bounding": [
+        410,
+        0,
+        1500,
+        518
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Chapter 2",
+      "bounding": [
+        410,
+        104,
+        1500,
+        892
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Chapter 3",
+      "bounding": [
+        410,
+        208,
+        1500,
+        1266
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Chapter 4",
+      "bounding": [
+        410,
+        312,
+        1500,
+        1640
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "description": "Transform a long-form text into 4 animated audiobook chapters: ElevenLabs TTS narrates each chapter passage, Kling AvatarGen animates a narrator portrait lip-synced to each audio, and all 4 avatar videos are saved as individual chapter files.",
+    "title": "Masterwork \u2014 Audiobook to Animated",
+    "tier": 3,
+    "pack": "ComfyUI-IxMxAMAR-Masterworks"
+  },
+  "version": 0.4
+}

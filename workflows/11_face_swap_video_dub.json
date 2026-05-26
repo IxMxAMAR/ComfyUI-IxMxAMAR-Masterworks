@@ -1,0 +1,1130 @@
+{
+  "last_node_id": 18,
+  "last_link_id": 17,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "NanoBanana_APIKey",
+      "pos": [
+        50,
+        50
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "nb_api",
+        "Node name for S&R": "NanoBanana_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "ElevenLabsPro_APIKey",
+      "pos": [
+        50,
+        174
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            2,
+            3
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "el_api",
+        "Node name for S&R": "ElevenLabsPro_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "KlingDirect_Auth",
+      "pos": [
+        50,
+        298
+      ],
+      "size": [
+        320,
+        134
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "kling_auth",
+        "Node name for S&R": "KlingDirect_Auth"
+      },
+      "widgets_values": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": 4,
+      "type": "KlingDirect_VideoLoader",
+      "pos": [
+        430,
+        50
+      ],
+      "size": [
+        320,
+        122
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [
+            14
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "video_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid_loader",
+        "Node name for S&R": "KlingDirect_VideoLoader"
+      },
+      "widgets_values": [
+        "source_presenter.mp4"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        430,
+        202
+      ],
+      "size": [
+        320,
+        108
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "identity_ref",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "LoadAudio",
+      "pos": [
+        430,
+        340
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            9
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "voice_sample",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "LoadImage",
+      "pos": [
+        430,
+        464
+      ],
+      "size": [
+        320,
+        108
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "target_frame",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "type": "NanoBananaWholeImageSwap",
+      "pos": [
+        810,
+        50
+      ],
+      "size": [
+        320,
+        418
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "target_image",
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "name": "identity_1",
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "name": "identity_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "identity_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "identity_4",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "identity_5",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "identity_6",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            7
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "links": [
+            8
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "debug_sheet",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "recipe_id": "swap",
+        "Node name for S&R": "NanoBananaWholeImageSwap"
+      },
+      "widgets_values": [
+        "gemini-2.5-pro",
+        "head",
+        "auto",
+        "Swap the presenter's face with the identity reference",
+        "block_only_high",
+        42,
+        "target",
+        "2K",
+        false,
+        120000,
+        1024,
+        true
+      ]
+    },
+    {
+      "id": 9,
+      "type": "PreviewImage",
+      "pos": [
+        1190,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "swap_prev",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 10,
+      "type": "ShowText",
+      "pos": [
+        1190,
+        154
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "swap_status",
+        "Node name for S&R": "ShowText"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "ElevenLabsPro_VoiceClone",
+      "pos": [
+        810,
+        498
+      ],
+      "size": [
+        320,
+        272
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "audio1",
+          "type": "AUDIO",
+          "link": 9
+        },
+        {
+          "name": "audio2",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio3",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio4",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio5",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio6",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio7",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "audio8",
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "voice_id",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "links": [
+            10
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "voice_clone",
+        "Node name for S&R": "ElevenLabsPro_VoiceClone"
+      },
+      "widgets_values": [
+        "Cloned Presenter Voice",
+        false,
+        "",
+        false
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ShowText",
+      "pos": [
+        1190,
+        278
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 10,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "clone_status",
+        "Node name for S&R": "ShowText"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        1570,
+        50
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "voice_id",
+          "type": "STRING",
+          "link": 11,
+          "widget": {
+            "name": "voice_id"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            12,
+            13
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "tts",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "Hello and welcome. Today I am going to show you something extraordinary that will change the way you think about content creation.",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 14,
+      "type": "PreviewAudio",
+      "pos": [
+        1950,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 12
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "tts_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "KlingDirect_CloudUploader",
+      "pos": [
+        1570,
+        528
+      ],
+      "size": [
+        320,
+        188
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            15
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid_upload",
+        "Node name for S&R": "KlingDirect_CloudUploader"
+      },
+      "widgets_values": [
+        "tmpfiles",
+        true,
+        "",
+        true,
+        "wav"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "KlingDirect_CloudUploader",
+      "pos": [
+        1570,
+        746
+      ],
+      "size": [
+        320,
+        188
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 13
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            16
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "audio_upload",
+        "Node name for S&R": "KlingDirect_CloudUploader"
+      },
+      "widgets_values": [
+        "tmpfiles",
+        true,
+        "",
+        true,
+        "wav"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "KlingDirect_AdvancedLipSync",
+      "pos": [
+        1950,
+        154
+      ],
+      "size": [
+        320,
+        210
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 4
+        },
+        {
+          "name": "video_url",
+          "type": "STRING",
+          "link": 15,
+          "widget": {
+            "name": "video_url"
+          }
+        },
+        {
+          "name": "audio_url",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "audio_url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            17
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "lipsync",
+        "Node name for S&R": "KlingDirect_AdvancedLipSync"
+      },
+      "widgets_values": [
+        0,
+        100
+      ]
+    },
+    {
+      "id": 18,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        50
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_faceswap_dub"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      2,
+      0,
+      11,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      2,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      3,
+      0,
+      17,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      5,
+      7,
+      0,
+      8,
+      1,
+      "IMAGE"
+    ],
+    [
+      6,
+      5,
+      0,
+      8,
+      2,
+      "IMAGE"
+    ],
+    [
+      7,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      8,
+      1,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      6,
+      0,
+      11,
+      1,
+      "AUDIO"
+    ],
+    [
+      10,
+      11,
+      1,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      11,
+      0,
+      13,
+      1,
+      "STRING"
+    ],
+    [
+      12,
+      13,
+      0,
+      14,
+      0,
+      "AUDIO"
+    ],
+    [
+      13,
+      13,
+      0,
+      16,
+      0,
+      "AUDIO"
+    ],
+    [
+      14,
+      4,
+      0,
+      15,
+      1,
+      "IMAGE"
+    ],
+    [
+      15,
+      15,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      16,
+      16,
+      0,
+      17,
+      2,
+      "STRING"
+    ],
+    [
+      17,
+      17,
+      3,
+      18,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Setup",
+      "bounding": [
+        30,
+        0,
+        360,
+        452
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Source Material",
+      "bounding": [
+        410,
+        0,
+        360,
+        592
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Face Swap",
+      "bounding": [
+        790,
+        0,
+        740,
+        488
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Voice Clone",
+      "bounding": [
+        790,
+        228,
+        740,
+        562
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Dub Script",
+      "bounding": [
+        1550,
+        0,
+        740,
+        518
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Upload & Sync",
+      "bounding": [
+        1550,
+        104,
+        740,
+        850
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Output",
+      "bounding": [
+        2310,
+        0,
+        360,
+        198
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "description": "Deep personalisation pipeline: load a source video, swap the on-screen face with a target identity using NanoBananaWholeImageSwap on a batch of frames, clone a new voice from a sample with ElevenLabs VoiceClone, synthesise dubbed audio with TTS, then apply Kling AdvancedLipSync for lip-matching.",
+    "title": "Masterwork \u2014 Face Swap Video Dub",
+    "tier": 3,
+    "pack": "ComfyUI-IxMxAMAR-Masterworks"
+  },
+  "version": 0.4
+}

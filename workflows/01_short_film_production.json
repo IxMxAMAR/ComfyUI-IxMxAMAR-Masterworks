@@ -1,0 +1,1705 @@
+{
+  "last_node_id": 27,
+  "last_link_id": 28,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "NanoBanana_APIKey",
+      "pos": [
+        50,
+        50
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "nb_api",
+        "Node name for S&R": "NanoBanana_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KlingDirect_Auth",
+      "pos": [
+        50,
+        174
+      ],
+      "size": [
+        320,
+        134
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "links": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "kling_auth",
+        "Node name for S&R": "KlingDirect_Auth"
+      },
+      "widgets_values": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ElevenLabsPro_APIKey",
+      "pos": [
+        50,
+        338
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "links": [
+            6,
+            7,
+            8
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "el_api",
+        "Node name for S&R": "ElevenLabsPro_APIKey"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "type": "NanoBanana_TextGen",
+      "pos": [
+        430,
+        50
+      ],
+      "size": [
+        320,
+        334
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            13
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "script",
+        "Node name for S&R": "NanoBanana_TextGen"
+      },
+      "widgets_values": [
+        "gemini-2.5-flash",
+        "",
+        "Write a short cinematic film script with exactly 4 scenes. Label each scene [SCENE 1], [SCENE 2], [SCENE 3], [SCENE 4]. Genre: sci-fi drama. Setting: near-future Earth after first contact. Each scene is 2-3 sentences describing the visual action and atmosphere. End with a one-line narrator caption for each scene, prefixed [NARR 1], [NARR 2], [NARR 3], [NARR 4].",
+        "",
+        0.85,
+        0.95,
+        0,
+        0,
+        "NONE",
+        0,
+        -1,
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "type": "ShowText",
+      "pos": [
+        810,
+        50
+      ],
+      "size": [
+        320,
+        94
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "script_out",
+        "Node name for S&R": "ShowText"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 6,
+      "type": "NanoBanana_ImageGen",
+      "pos": [
+        1190,
+        50
+      ],
+      "size": [
+        320,
+        356
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "ref_image_1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            14,
+            18
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "img1",
+        "Node name for S&R": "NanoBanana_ImageGen"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Scene 1: An astronaut stands alone on a rain-soaked runway, a vast alien craft hovers silently overhead, blue bioluminescent light, cinematic wide shot, photorealistic",
+        "16:9",
+        "4K",
+        "",
+        "NONE",
+        1.0,
+        -1,
+        1,
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "NanoBanana_ImageGen",
+      "pos": [
+        1190,
+        436
+      ],
+      "size": [
+        320,
+        356
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "ref_image_1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            15,
+            19
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "img2",
+        "Node name for S&R": "NanoBanana_ImageGen"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Scene 2: Inside a translucent alien chamber, two beings face each other across a shimmering energy barrier, dramatic rim lighting, cinematic, photorealistic",
+        "16:9",
+        "4K",
+        "",
+        "NONE",
+        1.0,
+        -1,
+        1,
+        ""
+      ]
+    },
+    {
+      "id": 8,
+      "type": "NanoBanana_ImageGen",
+      "pos": [
+        1190,
+        822
+      ],
+      "size": [
+        320,
+        356
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "ref_image_1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            16,
+            20
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "img3",
+        "Node name for S&R": "NanoBanana_ImageGen"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Scene 3: A crowded city street erupts in celebration, holographic displays show the alien greeting, confetti and light beams, cinematic, photorealistic",
+        "16:9",
+        "4K",
+        "",
+        "NONE",
+        1.0,
+        -1,
+        1,
+        ""
+      ]
+    },
+    {
+      "id": 9,
+      "type": "NanoBanana_ImageGen",
+      "pos": [
+        1190,
+        1208
+      ],
+      "size": [
+        320,
+        356
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "api_key"
+          }
+        },
+        {
+          "name": "ref_image_1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_2",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "ref_image_4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            17,
+            21
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "img4",
+        "Node name for S&R": "NanoBanana_ImageGen"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image-preview",
+        "",
+        "Scene 4: The alien craft departing at dawn, leaving a trail of golden light over the ocean horizon, epic wide shot, photorealistic, cinematic",
+        "16:9",
+        "4K",
+        "",
+        "NONE",
+        1.0,
+        -1,
+        1,
+        ""
+      ]
+    },
+    {
+      "id": 10,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        154
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 15
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev2",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 12,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        258
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev3",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "PreviewImage",
+      "pos": [
+        1570,
+        362
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "prev4",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 14,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        50
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 9
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            22
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid1",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Slow cinematic push-in, rain drops on lens, bioluminescent light pulses",
+        "shaky, blur, low quality",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 15,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        350
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 10
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid2",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Dramatic slow zoom, energy barrier shimmers and ripples, tense atmosphere",
+        "shaky, blur, low quality",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 16,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        650
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 11
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            24
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid3",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Camera pans through celebrating crowd, confetti falls in slow motion, joyful energy",
+        "shaky, blur, low quality",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 17,
+      "type": "KlingDirect_ImageToVideo",
+      "pos": [
+        1950,
+        950
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "auth",
+          "type": "KLING_AUTH",
+          "link": 12
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "image_tail",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "camera_control",
+          "type": "KLING_CAMERA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "video_file",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "links": [
+            25
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "task_id",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "recipe_id": "vid4",
+        "Node name for S&R": "KlingDirect_ImageToVideo"
+      },
+      "widgets_values": [
+        "Craft ascends with rising camera tilt, golden wake fades into sunrise horizon",
+        "shaky, blur, low quality",
+        "kling-v3",
+        "5",
+        "pro",
+        false,
+        0.5
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ElevenLabsPro_TTS",
+      "pos": [
+        2330,
+        50
+      ],
+      "size": [
+        320,
+        448
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            26
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "raw_response_info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "narration",
+        "Node name for S&R": "ElevenLabsPro_TTS"
+      },
+      "widgets_values": [
+        "They came not as conquerors, but as witnesses. In the silence between worlds, understanding was born. Humanity celebrated a new dawn \u2014 not the end of one story, but the beginning of another. And as they departed, they left behind only the echo of what we might become.",
+        "21m00Tcm4TlvDq8ikWAM",
+        "eleven_v3",
+        0.5,
+        0.75,
+        0.0,
+        1.0,
+        true,
+        "Auto Detect",
+        "auto",
+        "mp3_44100_192",
+        0,
+        "",
+        "",
+        false,
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 19,
+      "type": "PreviewAudio",
+      "pos": [
+        2710,
+        50
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 26
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "narr_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 20,
+      "type": "ElevenLabsPro_SFX",
+      "pos": [
+        2330,
+        528
+      ],
+      "size": [
+        320,
+        234
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "sfx",
+        "Node name for S&R": "ElevenLabsPro_SFX"
+      },
+      "widgets_values": [
+        "Deep resonant alien spacecraft hum, low frequency rumble, atmospheric tension, cinematic sound design",
+        "eleven_text_to_sound_v2",
+        8.0,
+        0.3,
+        false,
+        "mp3_44100_192",
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "type": "ElevenLabsPro_Music",
+      "pos": [
+        2330,
+        792
+      ],
+      "size": [
+        320,
+        294
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "api_key"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            28
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "music",
+        "Node name for S&R": "ElevenLabsPro_Music"
+      },
+      "widgets_values": [
+        "Epic orchestral score, first contact theme, strings and brass swelling, hopeful resolution, cinematic, 90 seconds",
+        "music_v1",
+        90.0,
+        0,
+        true,
+        true,
+        false,
+        false,
+        "",
+        "mp3_44100_192"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "PreviewAudio",
+      "pos": [
+        2710,
+        154
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 27
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "sfx_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "PreviewAudio",
+      "pos": [
+        2710,
+        258
+      ],
+      "size": [
+        320,
+        74
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 28
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "recipe_id": "music_prev",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        1116
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver1",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_film_scene1"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        1274
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 23,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver2",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_film_scene2"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        1432
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 24,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver3",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_film_scene3"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "KlingDirect_FastVideoSaver",
+      "pos": [
+        2330,
+        1590
+      ],
+      "size": [
+        320,
+        128
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "link": 25,
+          "widget": {
+            "name": "url"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "filename",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "recipe_id": "saver4",
+        "Node name for S&R": "KlingDirect_FastVideoSaver"
+      },
+      "widgets_values": [
+        "masterwork_film_scene4"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      1,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      1,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      1,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      1,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      3,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      3,
+      0,
+      20,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      3,
+      0,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      2,
+      0,
+      14,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      10,
+      2,
+      0,
+      15,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      11,
+      2,
+      0,
+      16,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      12,
+      2,
+      0,
+      17,
+      0,
+      "KLING_AUTH"
+    ],
+    [
+      13,
+      4,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      6,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      7,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      8,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      9,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      6,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      19,
+      7,
+      0,
+      15,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
+      8,
+      0,
+      16,
+      1,
+      "IMAGE"
+    ],
+    [
+      21,
+      9,
+      0,
+      17,
+      1,
+      "IMAGE"
+    ],
+    [
+      22,
+      14,
+      3,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      15,
+      3,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      24,
+      16,
+      3,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      25,
+      17,
+      3,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      26,
+      18,
+      0,
+      19,
+      0,
+      "AUDIO"
+    ],
+    [
+      27,
+      20,
+      0,
+      22,
+      0,
+      "AUDIO"
+    ],
+    [
+      28,
+      21,
+      0,
+      23,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Setup",
+      "bounding": [
+        30,
+        0,
+        360,
+        452
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Script",
+      "bounding": [
+        410,
+        0,
+        740,
+        404
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Scene Images",
+      "bounding": [
+        1170,
+        0,
+        740,
+        1584
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Animate Scenes",
+      "bounding": [
+        1930,
+        0,
+        360,
+        1240
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Narration",
+      "bounding": [
+        2310,
+        0,
+        740,
+        518
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Soundscape",
+      "bounding": [
+        2310,
+        104,
+        740,
+        1002
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Save",
+      "bounding": [
+        2310,
+        1066,
+        360,
+        672
+      ],
+      "color": "#3F789E",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    "description": "End-to-end short film pipeline: Gemini writes a 4-scene script, each scene is illustrated with ImageGen, Kling animates each still into a 5-second clip, and ElevenLabs adds narration, cinematic SFX, and a score \u2014 all from a single creative prompt.",
+    "title": "Masterwork \u2014 Short Film Production",
+    "tier": 3,
+    "pack": "ComfyUI-IxMxAMAR-Masterworks"
+  },
+  "version": 0.4
+}

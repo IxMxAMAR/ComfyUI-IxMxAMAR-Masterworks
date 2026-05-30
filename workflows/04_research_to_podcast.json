@@ -1,6 +1,6 @@
 {
-  "last_node_id": 11,
-  "last_link_id": 12,
+  "last_node_id": 14,
+  "last_link_id": 15,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -42,11 +42,11 @@
       "type": "ElevenLabsPro_APIKey",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 2,
@@ -80,7 +80,7 @@
       ],
       "size": [
         320,
-        348
+        388
       ],
       "flags": {},
       "order": 3,
@@ -100,6 +100,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            6,
             7
           ],
           "slot_index": 0
@@ -116,6 +117,7 @@
         "Node name for S&R": "NanoBanana_TextGenSearch"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
         "Research the latest advances in generative AI for creative media production in 2025-2026. Summarise the 5 most interesting developments with context.",
         "",
@@ -125,6 +127,46 @@
     },
     {
       "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        860,
+        60
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "search_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 5,
       "type": "NanoBanana_MultiTurn",
       "pos": [
         1260,
@@ -132,10 +174,10 @@
       ],
       "size": [
         320,
-        428
+        492
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -160,6 +202,7 @@
           "name": "response",
           "type": "STRING",
           "links": [
+            8,
             9
           ],
           "slot_index": 0
@@ -176,26 +219,68 @@
         "Node name for S&R": "NanoBanana_MultiTurn"
       },
       "widgets_values": [
+        "",
         "gemini-pro-latest",
         "",
+        "Based on this research, create a structured podcast episode outline with 3 main segments. Each segment should have a clear topic, a key talking point, and a provocative question for discussion.",
         "",
         "",
         0.6
       ]
     },
     {
-      "id": 5,
-      "type": "NanoBanana_TextGen",
+      "id": 6,
+      "type": "ShowText|pysssss",
       "pos": [
-        1260,
-        538
+        1660,
+        60
       ],
       "size": [
         320,
-        484
+        88
       ],
       "flags": {},
-      "order": 5,
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "outline_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "NanoBanana_TextGen",
+      "pos": [
+        1260,
+        602
+      ],
+      "size": [
+        320,
+        536
+      ],
+      "flags": {},
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -219,7 +304,9 @@
         {
           "name": "text",
           "type": "STRING",
-          "links": [],
+          "links": [
+            10
+          ],
           "slot_index": 0
         }
       ],
@@ -228,8 +315,10 @@
         "Node name for S&R": "NanoBanana_TextGen"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
         "",
+        "Write a lively 3-host podcast script for a 3-minute episode. Hosts: ALEX (sceptical analyst), MAYA (enthusiastic technologist), JORDAN (pragmatic creator). Format each line as ALEX: ... / MAYA: ... / JORDAN: ... Topic: the future of AI in creative media. Make it conversational and engaging.",
         "",
         0.8,
         0.95,
@@ -243,7 +332,47 @@
       ]
     },
     {
-      "id": 6,
+      "id": 8,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1660,
+        198
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 10,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "script_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 9,
       "type": "ElevenLabsPro_Dialogue",
       "pos": [
         2060,
@@ -251,10 +380,10 @@
       ],
       "size": [
         320,
-        1278
+        1536
       ],
       "flags": {},
-      "order": 6,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -282,6 +411,7 @@
         "Node name for S&R": "ElevenLabsPro_Dialogue"
       },
       "widgets_values": [
+        "",
         "Welcome back to Tech Pulse! I'm Alex, and today we're diving into AI-powered creative tools.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
@@ -313,7 +443,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 10,
       "type": "PreviewAudio",
       "pos": [
         2460,
@@ -321,10 +451,10 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -341,18 +471,18 @@
       "widgets_values": []
     },
     {
-      "id": 8,
+      "id": 11,
       "type": "ElevenLabsPro_Music",
       "pos": [
         2060,
-        1388
+        1646
       ],
       "size": [
         320,
-        440
+        488
       ],
       "flags": {},
-      "order": 8,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -380,6 +510,7 @@
         "Node name for S&R": "ElevenLabsPro_Music"
       },
       "widgets_values": [
+        "",
         "Upbeat tech podcast intro, electronic beats with melodic synths, energetic and modern, 10 seconds, no vocals",
         "music_v1",
         10.0,
@@ -394,18 +525,18 @@
       ]
     },
     {
-      "id": 9,
+      "id": 12,
       "type": "PreviewAudio",
       "pos": [
         2460,
-        192
+        166
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -422,7 +553,7 @@
       "widgets_values": []
     },
     {
-      "id": 10,
+      "id": 13,
       "type": "ElevenLabsPro_AudioConcat",
       "pos": [
         2860,
@@ -430,10 +561,10 @@
       ],
       "size": [
         320,
-        230
+        228
       ],
       "flags": {},
-      "order": 10,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -496,7 +627,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 14,
       "type": "PreviewAudio",
       "pos": [
         3260,
@@ -504,10 +635,10 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 11,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -537,7 +668,7 @@
       2,
       1,
       0,
-      4,
+      5,
       0,
       "STRING"
     ],
@@ -545,7 +676,7 @@
       3,
       1,
       0,
-      5,
+      7,
       0,
       "STRING"
     ],
@@ -553,7 +684,7 @@
       4,
       2,
       0,
-      6,
+      9,
       0,
       "STRING"
     ],
@@ -561,7 +692,15 @@
       5,
       2,
       0,
-      8,
+      11,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      3,
+      0,
+      4,
       0,
       "STRING"
     ],
@@ -569,55 +708,71 @@
       7,
       3,
       0,
-      4,
-      1,
-      "STRING"
-    ],
-    [
-      9,
-      4,
-      0,
       5,
       1,
       "STRING"
     ],
     [
-      11,
+      8,
+      5,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      5,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      10,
+      7,
+      0,
       8,
       0,
-      10,
+      "STRING"
+    ],
+    [
+      11,
+      11,
+      0,
+      13,
       0,
       "AUDIO"
     ],
     [
       12,
-      6,
+      9,
       0,
-      10,
+      13,
       1,
       "AUDIO"
     ],
     [
       13,
-      6,
+      9,
       0,
-      7,
+      10,
       0,
       "AUDIO"
     ],
     [
       14,
-      8,
+      11,
       0,
-      9,
+      12,
       0,
       "AUDIO"
     ],
     [
       15,
-      10,
+      13,
       0,
-      11,
+      14,
       0,
       "AUDIO"
     ]
@@ -629,7 +784,7 @@
         35,
         -1,
         370,
-        344
+        312
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -641,7 +796,7 @@
         435,
         -1,
         770,
-        434
+        474
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -653,7 +808,7 @@
         1235,
         -1,
         770,
-        514
+        578
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -663,9 +818,9 @@
       "title": "Write Script",
       "bounding": [
         1235,
-        153,
+        137,
         770,
-        894
+        1026
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -677,7 +832,7 @@
         2035,
         -1,
         770,
-        1364
+        1622
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -687,9 +842,9 @@
       "title": "Intro Music",
       "bounding": [
         2035,
-        131,
+        105,
         770,
-        1722
+        2054
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -701,7 +856,7 @@
         2835,
         -1,
         770,
-        316
+        314
       ],
       "color": "#3F789E",
       "font_size": 24,

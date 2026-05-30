@@ -1,6 +1,6 @@
 {
-  "last_node_id": 10,
-  "last_link_id": 9,
+  "last_node_id": 14,
+  "last_link_id": 13,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -40,11 +40,11 @@
       "type": "ElevenLabsPro_APIKey",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 2,
@@ -77,7 +77,7 @@
       ],
       "size": [
         320,
-        1204
+        1356
       ],
       "flags": {},
       "order": 3,
@@ -99,6 +99,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            3,
             4
           ],
           "slot_index": 0
@@ -170,17 +171,57 @@
     },
     {
       "id": 4,
-      "type": "UtilMegaPack_Programming",
+      "type": "ShowText|pysssss",
       "pos": [
-        460,
-        1314
+        860,
+        60
       ],
       "size": [
         320,
-        1208
+        88
       ],
       "flags": {},
       "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "raw_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "type": "UtilMegaPack_Programming",
+      "pos": [
+        460,
+        1466
+      ],
+      "size": [
+        320,
+        1328
+      ],
+      "flags": {},
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -207,6 +248,7 @@
           "name": "string",
           "type": "STRING",
           "links": [
+            5,
             6
           ],
           "slot_index": 0
@@ -253,8 +295,9 @@
         "Node name for S&R": "UtilMegaPack_Programming"
       },
       "widgets_values": [
-        "json_get",
+        "aes_decrypt",
         "default",
+        "",
         80,
         false,
         false,
@@ -297,7 +340,47 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
+      "type": "ShowText|pysssss",
+      "pos": [
+        860,
+        198
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "parse_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 7,
       "type": "NanoBanana_TextGen",
       "pos": [
         1260,
@@ -305,10 +388,10 @@
       ],
       "size": [
         320,
-        484
+        536
       ],
       "flags": {},
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -333,6 +416,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            7,
             8
           ],
           "slot_index": 0
@@ -343,8 +427,10 @@
         "Node name for S&R": "NanoBanana_TextGen"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
         "",
+        "You are a financial data analyst presenting a live market report. Given the following JSON data from a live market API, write a concise, clear, professional 3-sentence spoken analysis. Include what the key number means, any relevant context, and a brief outlook. Keep it under 80 words \u2014 it will be read aloud on a podcast. Data: ",
         "",
         0.4,
         0.95,
@@ -358,18 +444,58 @@
       ]
     },
     {
-      "id": 6,
-      "type": "ElevenLabsPro_VoiceSelector",
+      "id": 8,
+      "type": "ShowText|pysssss",
       "pos": [
-        1260,
-        594
+        1660,
+        60
       ],
       "size": [
         320,
-        126
+        88
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "insight_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 9,
+      "type": "ElevenLabsPro_VoiceSelector",
+      "pos": [
+        1260,
+        646
+      ],
+      "size": [
+        320,
+        112
+      ],
+      "flags": {},
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -387,12 +513,12 @@
         "Node name for S&R": "ElevenLabsPro_VoiceSelector"
       },
       "widgets_values": [
-        "Rachel",
+        "Rachel (female, american)",
         ""
       ]
     },
     {
-      "id": 7,
+      "id": 10,
       "type": "ElevenLabsPro_TTSTimestamps",
       "pos": [
         2060,
@@ -400,10 +526,10 @@
       ],
       "size": [
         320,
-        356
+        380
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -455,6 +581,9 @@
         "Node name for S&R": "ElevenLabsPro_TTSTimestamps"
       },
       "widgets_values": [
+        "",
+        "Live market update: Bitcoin is currently trading at $67,000 US dollars. This represents a 2.4% gain over the past 24 hours.",
+        "",
         "eleven_v3",
         0.5,
         0.75,
@@ -465,7 +594,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 11,
       "type": "PreviewAudio",
       "pos": [
         2460,
@@ -473,10 +602,10 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 8,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -493,18 +622,18 @@
       "widgets_values": []
     },
     {
-      "id": 9,
+      "id": 12,
       "type": "ElevenLabsPro_SubtitleExport",
       "pos": [
         2060,
-        466
+        490
       ],
       "size": [
         320,
-        228
+        240
       ],
       "flags": {},
-      "order": 9,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -520,7 +649,9 @@
         {
           "name": "subtitle_text",
           "type": "STRING",
-          "links": [],
+          "links": [
+            13
+          ],
           "slot_index": 0
         }
       ],
@@ -529,13 +660,54 @@
         "Node name for S&R": "ElevenLabsPro_SubtitleExport"
       },
       "widgets_values": [
+        "",
         "srt",
         50,
         6.0
       ]
     },
     {
-      "id": 10,
+      "id": 13,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2460,
+        166
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "srt_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 14,
       "type": "ElevenLabsPro_SaveAudio",
       "pos": [
         2860,
@@ -543,10 +715,10 @@
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
-      "order": 10,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -579,20 +751,20 @@
       1,
       1,
       0,
-      5,
-      0,
-      "STRING"
-    ],
-    [
-      2,
-      2,
-      0,
       7,
       0,
       "STRING"
     ],
     [
-      4,
+      2,
+      2,
+      0,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      3,
       3,
       0,
       4,
@@ -600,50 +772,82 @@
       "STRING"
     ],
     [
-      6,
       4,
+      3,
       0,
       5,
+      0,
+      "STRING"
+    ],
+    [
+      5,
+      5,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      0,
+      7,
       1,
       "STRING"
     ],
     [
-      8,
-      5,
-      0,
       7,
+      7,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      7,
+      0,
+      10,
       1,
       "STRING"
     ],
     [
       9,
-      6,
+      9,
       0,
-      7,
+      10,
       2,
       "STRING"
     ],
     [
       10,
-      7,
+      10,
       0,
-      8,
+      11,
       0,
       "AUDIO"
     ],
     [
       11,
-      7,
-      0,
       10,
+      0,
+      14,
       0,
       "AUDIO"
     ],
     [
       12,
-      7,
+      10,
       1,
-      9,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      13,
+      12,
+      0,
+      13,
       0,
       "STRING"
     ]
@@ -655,7 +859,7 @@
         35,
         -1,
         370,
-        344
+        312
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -667,7 +871,7 @@
         435,
         -1,
         770,
-        1290
+        1442
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -677,9 +881,9 @@
       "title": "Parse",
       "bounding": [
         435,
-        153,
+        137,
         770,
-        2394
+        2682
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -691,7 +895,7 @@
         1235,
         -1,
         770,
-        570
+        622
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -703,7 +907,7 @@
         1235,
         -1,
         1570,
-        746
+        784
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -713,9 +917,9 @@
       "title": "Subtitles",
       "bounding": [
         2035,
-        131,
+        105,
         770,
-        588
+        650
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -727,7 +931,7 @@
         2835,
         -1,
         370,
-        234
+        222
       ],
       "color": "#3F789E",
       "font_size": 24,

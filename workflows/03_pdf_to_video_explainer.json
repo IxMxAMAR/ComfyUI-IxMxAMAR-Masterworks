@@ -1,6 +1,6 @@
 {
-  "last_node_id": 11,
-  "last_link_id": 12,
+  "last_node_id": 13,
+  "last_link_id": 14,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -42,11 +42,11 @@
       "type": "ElevenLabsPro_APIKey",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 2,
@@ -75,11 +75,11 @@
       "type": "KlingDirect_Auth",
       "pos": [
         60,
-        368
+        336
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
       "order": 3,
@@ -114,7 +114,7 @@
       ],
       "size": [
         320,
-        188
+        180
       ],
       "flags": {},
       "order": 4,
@@ -150,6 +150,7 @@
         "Node name for S&R": "NanoBanana_FilesUpload"
       },
       "widgets_values": [
+        "",
         "C:/ComfyUI/input/document.pdf",
         "document.pdf",
         "application/pdf"
@@ -160,11 +161,11 @@
       "type": "LoadImage",
       "pos": [
         460,
-        298
+        290
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 5,
@@ -203,7 +204,7 @@
       ],
       "size": [
         320,
-        316
+        336
       ],
       "flags": {},
       "order": 6,
@@ -231,6 +232,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            7,
             8
           ],
           "slot_index": 0
@@ -241,7 +243,9 @@
         "Node name for S&R": "NanoBanana_VisionWithFile"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
+        "",
         "application/pdf",
         "Read this document carefully. Extract the 5 most important key points. For each point, write a concise, clear statement (1-2 sentences). Format as a numbered list: 1. ... 2. ... 3. ... 4. ... 5. ...",
         "",
@@ -251,6 +255,46 @@
     },
     {
       "id": 7,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1260,
+        60
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "extract_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
       "type": "NanoBanana_TextGen",
       "pos": [
         1660,
@@ -258,10 +302,10 @@
       ],
       "size": [
         320,
-        484
+        536
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -286,6 +330,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            9,
             10
           ],
           "slot_index": 0
@@ -296,8 +341,10 @@
         "Node name for S&R": "NanoBanana_TextGen"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
         "",
+        "Turn these key points into a 60-second spoken explainer script. Write in a warm, engaging presenter voice. Include a brief intro and a memorable conclusion. The script will be read aloud \u2014 keep sentences short and punchy. Key points to expand:\n\n",
         "",
         0.7,
         0.95,
@@ -311,7 +358,47 @@
       ]
     },
     {
-      "id": 8,
+      "id": 9,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2060,
+        60
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "script_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 10,
       "type": "ElevenLabsPro_TTS",
       "pos": [
         2460,
@@ -319,10 +406,10 @@
       ],
       "size": [
         320,
-        554
+        596
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -364,6 +451,8 @@
         "Node name for S&R": "ElevenLabsPro_TTS"
       },
       "widgets_values": [
+        "",
+        "Welcome to this explainer. Today I will walk you through the five key insights from this research.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
         0.5,
@@ -384,7 +473,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 11,
       "type": "PreviewAudio",
       "pos": [
         2860,
@@ -392,10 +481,10 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -412,18 +501,18 @@
       "widgets_values": []
     },
     {
-      "id": 10,
+      "id": 12,
       "type": "KlingDirect_AvatarGen",
       "pos": [
         2460,
-        664
+        706
       ],
       "size": [
         320,
-        278
+        296
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -487,18 +576,18 @@
       ]
     },
     {
-      "id": 11,
+      "id": 13,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2860,
-        192
+        166
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -529,6 +618,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_pdf_explainer"
       ]
     }
@@ -554,7 +644,7 @@
       3,
       1,
       0,
-      7,
+      8,
       0,
       "STRING"
     ],
@@ -562,7 +652,7 @@
       4,
       2,
       0,
-      8,
+      10,
       0,
       "STRING"
     ],
@@ -570,7 +660,7 @@
       5,
       3,
       0,
-      10,
+      12,
       0,
       "KLING_AUTH"
     ],
@@ -583,34 +673,50 @@
       "STRING"
     ],
     [
-      8,
+      7,
       6,
       0,
       7,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      6,
+      0,
+      8,
       1,
       "STRING"
     ],
     [
-      10,
-      7,
-      0,
+      9,
       8,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      10,
+      8,
+      0,
+      10,
       1,
       "STRING"
     ],
     [
       11,
-      8,
+      10,
       0,
-      9,
+      11,
       0,
       "AUDIO"
     ],
     [
       12,
-      8,
-      0,
       10,
+      0,
+      12,
       2,
       "AUDIO"
     ],
@@ -618,15 +724,15 @@
       13,
       5,
       0,
-      10,
+      12,
       1,
       "IMAGE"
     ],
     [
       14,
-      10,
+      12,
       3,
-      11,
+      13,
       0,
       "STRING"
     ]
@@ -638,7 +744,7 @@
         35,
         -1,
         370,
-        542
+        498
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -650,7 +756,7 @@
         435,
         -1,
         370,
-        446
+        424
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -662,7 +768,7 @@
         835,
         -1,
         770,
-        402
+        422
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -674,7 +780,7 @@
         1635,
         -1,
         770,
-        570
+        622
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -686,7 +792,7 @@
         2435,
         -1,
         770,
-        640
+        682
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -696,9 +802,9 @@
       "title": "Generate Avatar",
       "bounding": [
         2435,
-        603,
+        645,
         370,
-        364
+        382
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -708,9 +814,9 @@
       "title": "Output",
       "bounding": [
         2835,
-        131,
+        105,
         370,
-        230
+        218
       ],
       "color": "#3F789E",
       "font_size": 24,

@@ -1,6 +1,6 @@
 {
-  "last_node_id": 19,
-  "last_link_id": 23,
+  "last_node_id": 22,
+  "last_link_id": 26,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -43,11 +43,11 @@
       "type": "KlingDirect_Auth",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
       "order": 2,
@@ -84,7 +84,7 @@
       ],
       "size": [
         320,
-        516
+        572
       ],
       "flags": {},
       "order": 3,
@@ -137,6 +137,7 @@
         "Node name for S&R": "NanoBanana_ImageGen"
       },
       "widgets_values": [
+        "",
         "gemini-3.1-flash-image-preview",
         "",
         "Portrait of a young female astronaut hero, short dark hair, amber eyes, determined expression, white space suit, clean studio lighting, face clearly visible, photorealistic",
@@ -160,7 +161,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 4,
@@ -184,11 +185,11 @@
       "type": "LoadImage",
       "pos": [
         460,
-        626
+        682
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 5,
@@ -223,11 +224,11 @@
       "type": "LoadImage",
       "pos": [
         460,
-        798
+        840
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 6,
@@ -262,11 +263,11 @@
       "type": "LoadImage",
       "pos": [
         460,
-        970
+        998
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 7,
@@ -305,7 +306,7 @@
       ],
       "size": [
         320,
-        534
+        576
       ],
       "flags": {},
       "order": 8,
@@ -368,7 +369,9 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [],
+          "links": [
+            18
+          ],
           "slot_index": 1
         },
         {
@@ -389,11 +392,12 @@
         "Node name for S&R": "NanoBananaWholeImageSwap"
       },
       "widgets_values": [
-        "gemini-2.5-pro",
+        "",
+        "gemini-3.1-flash-image-preview",
         "head",
-        "auto",
+        "auto_sheet",
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
-        "block_only_high",
+        "BLOCK_ONLY_HIGH",
         42,
         "randomize",
         "target",
@@ -409,11 +413,11 @@
       "type": "NanoBananaWholeImageSwap",
       "pos": [
         1260,
-        644
+        686
       ],
       "size": [
         320,
-        534
+        576
       ],
       "flags": {},
       "order": 9,
@@ -476,7 +480,9 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [],
+          "links": [
+            19
+          ],
           "slot_index": 1
         },
         {
@@ -497,11 +503,12 @@
         "Node name for S&R": "NanoBananaWholeImageSwap"
       },
       "widgets_values": [
-        "gemini-2.5-pro",
+        "",
+        "gemini-3.1-flash-image-preview",
         "head",
-        "auto",
+        "auto_sheet",
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
-        "block_only_high",
+        "BLOCK_ONLY_HIGH",
         42,
         "randomize",
         "target",
@@ -517,11 +524,11 @@
       "type": "NanoBananaWholeImageSwap",
       "pos": [
         1260,
-        1228
+        1312
       ],
       "size": [
         320,
-        534
+        576
       ],
       "flags": {},
       "order": 10,
@@ -584,7 +591,9 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [],
+          "links": [
+            20
+          ],
           "slot_index": 1
         },
         {
@@ -605,11 +614,12 @@
         "Node name for S&R": "NanoBananaWholeImageSwap"
       },
       "widgets_values": [
-        "gemini-2.5-pro",
+        "",
+        "gemini-3.1-flash-image-preview",
         "head",
-        "auto",
+        "auto_sheet",
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
-        "block_only_high",
+        "BLOCK_ONLY_HIGH",
         42,
         "randomize",
         "target",
@@ -629,7 +639,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 11,
@@ -653,11 +663,11 @@
       "type": "PreviewImage",
       "pos": [
         1660,
-        192
+        166
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 12,
@@ -681,11 +691,11 @@
       "type": "PreviewImage",
       "pos": [
         1660,
-        324
+        272
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 13,
@@ -706,6 +716,126 @@
     },
     {
       "id": 14,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1660,
+        378
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 18,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "status1",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1660,
+        516
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 19,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "status2",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 16,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1660,
+        654
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 20,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "status3",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 17,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
@@ -713,10 +843,10 @@
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
-      "order": 14,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -789,18 +919,18 @@
       ]
     },
     {
-      "id": 15,
+      "id": 18,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
-        476
+        502
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -873,18 +1003,18 @@
       ]
     },
     {
-      "id": 16,
+      "id": 19,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
-        892
+        944
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
-      "order": 16,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -957,7 +1087,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 20,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
@@ -965,10 +1095,10 @@
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
-      "order": 17,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -999,22 +1129,23 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_char_scene1"
       ]
     },
     {
-      "id": 18,
+      "id": 21,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        254
+        242
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
-      "order": 18,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1045,22 +1176,23 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_char_scene2"
       ]
     },
     {
-      "id": 19,
+      "id": 22,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        448
+        424
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
-      "order": 19,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1091,6 +1223,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_char_scene3"
       ]
     }
@@ -1132,7 +1265,7 @@
       5,
       2,
       0,
-      14,
+      17,
       0,
       "KLING_AUTH"
     ],
@@ -1140,7 +1273,7 @@
       6,
       2,
       0,
-      15,
+      18,
       0,
       "KLING_AUTH"
     ],
@@ -1148,7 +1281,7 @@
       7,
       2,
       0,
-      16,
+      19,
       0,
       "KLING_AUTH"
     ],
@@ -1233,10 +1366,34 @@
       "IMAGE"
     ],
     [
+      18,
+      8,
+      1,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      19,
+      9,
+      1,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      10,
+      1,
+      16,
+      0,
+      "STRING"
+    ],
+    [
       21,
       8,
       0,
-      14,
+      17,
       1,
       "IMAGE"
     ],
@@ -1244,7 +1401,7 @@
       22,
       9,
       0,
-      15,
+      18,
       1,
       "IMAGE"
     ],
@@ -1252,31 +1409,31 @@
       23,
       10,
       0,
-      16,
+      19,
       1,
       "IMAGE"
     ],
     [
       24,
-      14,
-      3,
       17,
+      3,
+      20,
       0,
       "STRING"
     ],
     [
       25,
-      15,
-      3,
       18,
+      3,
+      21,
       0,
       "STRING"
     ],
     [
       26,
-      16,
-      3,
       19,
+      3,
+      22,
       0,
       "STRING"
     ]
@@ -1288,7 +1445,7 @@
         35,
         -1,
         370,
-        388
+        360
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1300,7 +1457,7 @@
         435,
         -1,
         770,
-        602
+        658
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1310,9 +1467,9 @@
       "title": "Scene Backgrounds",
       "bounding": [
         435,
-        565,
+        621,
         370,
-        552
+        510
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1324,7 +1481,7 @@
         1235,
         -1,
         370,
-        1788
+        1914
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1336,7 +1493,7 @@
         1635,
         -1,
         370,
-        894
+        768
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1348,7 +1505,7 @@
         2035,
         -1,
         370,
-        1284
+        1362
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1360,7 +1517,7 @@
         2435,
         -1,
         370,
-        618
+        582
       ],
       "color": "#3F789E",
       "font_size": 24,

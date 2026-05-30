@@ -1,6 +1,6 @@
 {
-  "last_node_id": 12,
-  "last_link_id": 11,
+  "last_node_id": 15,
+  "last_link_id": 14,
   "nodes": [
     {
       "id": 1,
@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -41,11 +41,11 @@
       "type": "ElevenLabsPro_APIKey",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 2,
@@ -74,11 +74,11 @@
       "type": "KlingDirect_Auth",
       "pos": [
         60,
-        368
+        336
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
       "order": 3,
@@ -113,7 +113,7 @@
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 4,
@@ -148,11 +148,11 @@
       "type": "ElevenLabsPro_VoiceSelector",
       "pos": [
         460,
-        232
+        218
       ],
       "size": [
         320,
-        126
+        112
       ],
       "flags": {},
       "order": 5,
@@ -173,7 +173,7 @@
         "Node name for S&R": "ElevenLabsPro_VoiceSelector"
       },
       "widgets_values": [
-        "Rachel",
+        "Rachel (female, american)",
         ""
       ]
     },
@@ -186,7 +186,7 @@
       ],
       "size": [
         320,
-        406
+        452
       ],
       "flags": {},
       "order": 6,
@@ -226,6 +226,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            6,
             7
           ],
           "slot_index": 0
@@ -236,6 +237,7 @@
         "Node name for S&R": "NanoBanana_Vision"
       },
       "widgets_values": [
+        "",
         "gemini-flash-latest",
         "",
         "You are an expert art critic and visual analyst. Examine this image in depth. Describe: the main subject and composition, the colour palette and mood, the historical or cultural context if apparent, and what makes this image significant. Write 3-4 rich paragraphs suitable for a video essay script.",
@@ -246,6 +248,46 @@
     },
     {
       "id": 7,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1260,
+        60
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "analysis_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 8,
       "type": "NanoBanana_TextGen",
       "pos": [
         1660,
@@ -253,10 +295,10 @@
       ],
       "size": [
         320,
-        484
+        536
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -281,6 +323,7 @@
           "name": "text",
           "type": "STRING",
           "links": [
+            8,
             9
           ],
           "slot_index": 0
@@ -291,8 +334,10 @@
         "Node name for S&R": "NanoBanana_TextGen"
       },
       "widgets_values": [
+        "",
         "gemini-2.5-flash",
         "",
+        "Transform the following visual analysis into a polished, spoken-word video essay narration. Write in a warm, authoritative presenter voice. Keep each sentence short and punchy for TTS. Under 200 words total. Analysis to expand:\n\n",
         "",
         0.7,
         0.95,
@@ -306,18 +351,58 @@
       ]
     },
     {
-      "id": 8,
-      "type": "KlingDirect_MultiShot",
+      "id": 9,
+      "type": "ShowText|pysssss",
       "pos": [
-        1660,
-        594
+        2060,
+        60
       ],
       "size": [
         320,
-        294
+        88
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "essay_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 10,
+      "type": "KlingDirect_MultiShot",
+      "pos": [
+        1660,
+        646
+      ],
+      "size": [
+        320,
+        296
+      ],
+      "flags": {},
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -364,18 +449,18 @@
       ]
     },
     {
-      "id": 9,
+      "id": 11,
       "type": "PreviewImage",
       "pos": [
         2060,
-        214
+        198
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -392,7 +477,7 @@
       "widgets_values": []
     },
     {
-      "id": 10,
+      "id": 12,
       "type": "ElevenLabsPro_TTSTimestamps",
       "pos": [
         2460,
@@ -400,10 +485,10 @@
       ],
       "size": [
         320,
-        356
+        380
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -454,6 +539,9 @@
         "Node name for S&R": "ElevenLabsPro_TTSTimestamps"
       },
       "widgets_values": [
+        "",
+        "Welcome to this visual essay. Every image holds a story waiting to be read.",
+        "",
         "eleven_v3",
         0.5,
         0.75,
@@ -464,7 +552,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 13,
       "type": "PreviewAudio",
       "pos": [
         2860,
@@ -472,10 +560,10 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
-      "order": 11,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -492,18 +580,18 @@
       "widgets_values": []
     },
     {
-      "id": 12,
+      "id": 14,
       "type": "ElevenLabsPro_SubtitleExport",
       "pos": [
         2460,
-        466
+        490
       ],
       "size": [
         320,
-        228
+        240
       ],
       "flags": {},
-      "order": 12,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -519,7 +607,9 @@
         {
           "name": "subtitle_text",
           "type": "STRING",
-          "links": [],
+          "links": [
+            14
+          ],
           "slot_index": 0
         }
       ],
@@ -528,9 +618,50 @@
         "Node name for S&R": "ElevenLabsPro_SubtitleExport"
       },
       "widgets_values": [
+        "",
         "srt",
         42,
         6.0
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2860,
+        166
+      ],
+      "size": [
+        320,
+        88
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "recipe_id": "srt_out",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
       ]
     }
   ],
@@ -547,7 +678,7 @@
       2,
       1,
       0,
-      7,
+      8,
       0,
       "STRING"
     ],
@@ -555,7 +686,7 @@
       3,
       2,
       0,
-      10,
+      12,
       0,
       "STRING"
     ],
@@ -563,7 +694,7 @@
       4,
       3,
       0,
-      8,
+      10,
       0,
       "KLING_AUTH"
     ],
@@ -576,18 +707,34 @@
       "IMAGE"
     ],
     [
-      7,
+      6,
       6,
       0,
       7,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      6,
+      0,
+      8,
       1,
       "STRING"
     ],
     [
-      9,
-      7,
+      8,
+      8,
       0,
-      10,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      8,
+      0,
+      12,
       1,
       "STRING"
     ],
@@ -595,31 +742,39 @@
       10,
       5,
       0,
-      10,
+      12,
       2,
       "STRING"
     ],
     [
       11,
-      8,
+      10,
       0,
-      9,
+      11,
       0,
       "IMAGE"
     ],
     [
       12,
-      10,
+      12,
       0,
-      11,
+      13,
       0,
       "AUDIO"
     ],
     [
       13,
-      10,
-      1,
       12,
+      1,
+      14,
+      0,
+      "STRING"
+    ],
+    [
+      14,
+      14,
+      0,
+      15,
       0,
       "STRING"
     ]
@@ -631,7 +786,7 @@
         35,
         -1,
         370,
-        542
+        498
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -643,7 +798,7 @@
         435,
         -1,
         370,
-        384
+        356
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -655,7 +810,7 @@
         835,
         -1,
         770,
-        492
+        538
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -667,7 +822,7 @@
         1635,
         -1,
         770,
-        570
+        622
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -677,9 +832,9 @@
       "title": "Keyframes",
       "bounding": [
         1635,
-        153,
+        137,
         770,
-        760
+        830
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -691,7 +846,7 @@
         2435,
         -1,
         770,
-        442
+        466
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -701,9 +856,9 @@
       "title": "Subtitles",
       "bounding": [
         2435,
-        131,
+        105,
         770,
-        588
+        650
       ],
       "color": "#3F789E",
       "font_size": 24,

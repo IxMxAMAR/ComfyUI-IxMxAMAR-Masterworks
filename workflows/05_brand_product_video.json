@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -44,11 +44,11 @@
       "type": "KlingDirect_Auth",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
       "order": 2,
@@ -82,11 +82,11 @@
       "type": "ElevenLabsPro_APIKey",
       "pos": [
         60,
-        412
+        384
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 3,
@@ -120,7 +120,7 @@
       ],
       "size": [
         320,
-        360
+        384
       ],
       "flags": {},
       "order": 4,
@@ -154,6 +154,7 @@
         "Node name for S&R": "NanoBanana_ImagenGen"
       },
       "widgets_values": [
+        "",
         "imagen-4.0-generate-001",
         "A sleek minimalist luxury watch on a polished black marble surface, professional product photography, dramatic side lighting, ultra-sharp focus, 8K commercial quality",
         "",
@@ -175,7 +176,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 5,
@@ -203,7 +204,7 @@
       ],
       "size": [
         320,
-        424
+        472
       ],
       "flags": {},
       "order": 6,
@@ -259,6 +260,7 @@
         "Node name for S&R": "NanoBanana_ImageEdit"
       },
       "widgets_values": [
+        "",
         "gemini-3.1-flash-image-preview",
         "",
         "Change lighting to warm golden hour sunlight coming from the left, casting a long elegant shadow",
@@ -272,11 +274,11 @@
       "type": "NanoBanana_ImageEdit",
       "pos": [
         1260,
-        534
+        582
       ],
       "size": [
         320,
-        424
+        472
       ],
       "flags": {},
       "order": 7,
@@ -332,6 +334,7 @@
         "Node name for S&R": "NanoBanana_ImageEdit"
       },
       "widgets_values": [
+        "",
         "gemini-3.1-flash-image-preview",
         "",
         "Change background to deep ocean blue gradient, add subtle caustic light reflections on the watch face",
@@ -345,11 +348,11 @@
       "type": "NanoBanana_ImageEdit",
       "pos": [
         1260,
-        1008
+        1104
       ],
       "size": [
         320,
-        424
+        472
       ],
       "flags": {},
       "order": 8,
@@ -405,6 +408,7 @@
         "Node name for S&R": "NanoBanana_ImageEdit"
       },
       "widgets_values": [
+        "",
         "gemini-3.1-flash-image-preview",
         "",
         "Rotate the composition 45 degrees, add a luxury velvet red cushion underneath, cinematic vignette",
@@ -418,11 +422,11 @@
       "type": "NanoBanana_ImageEdit",
       "pos": [
         1260,
-        1482
+        1626
       ],
       "size": [
         320,
-        424
+        472
       ],
       "flags": {},
       "order": 9,
@@ -478,6 +482,7 @@
         "Node name for S&R": "NanoBanana_ImageEdit"
       },
       "widgets_values": [
+        "",
         "gemini-3.1-flash-image-preview",
         "",
         "Place the watch outdoors on a rocky mountain peak at sunset, dramatic sky, ultra-realistic",
@@ -495,7 +500,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 10,
@@ -519,11 +524,11 @@
       "type": "PreviewImage",
       "pos": [
         1660,
-        192
+        166
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 11,
@@ -547,11 +552,11 @@
       "type": "PreviewImage",
       "pos": [
         1660,
-        324
+        272
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 12,
@@ -575,11 +580,11 @@
       "type": "PreviewImage",
       "pos": [
         1660,
-        456
+        378
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 13,
@@ -607,7 +612,7 @@
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
       "order": 14,
@@ -687,11 +692,11 @@
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
-        476
+        502
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
       "order": 15,
@@ -771,11 +776,11 @@
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
-        892
+        944
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
       "order": 16,
@@ -855,11 +860,11 @@
       "type": "KlingDirect_ImageToVideo",
       "pos": [
         2060,
-        1308
+        1386
       ],
       "size": [
         320,
-        366
+        392
       ],
       "flags": {},
       "order": 17,
@@ -943,7 +948,7 @@
       ],
       "size": [
         320,
-        316
+        336
       ],
       "flags": {},
       "order": 18,
@@ -973,6 +978,7 @@
         "Node name for S&R": "ElevenLabsPro_SFX"
       },
       "widgets_values": [
+        "",
         "Elegant cinematic whoosh sound effect, smooth and polished, luxury brand feel",
         "eleven_text_to_sound_v2",
         2.0,
@@ -988,11 +994,11 @@
       "type": "ElevenLabsPro_SFX",
       "pos": [
         2460,
-        426
+        446
       ],
       "size": [
         320,
-        316
+        336
       ],
       "flags": {},
       "order": 19,
@@ -1022,6 +1028,7 @@
         "Node name for S&R": "ElevenLabsPro_SFX"
       },
       "widgets_values": [
+        "",
         "Subtle ambient background hum, high-end luxury product video atmosphere, very quiet, gentle",
         "eleven_text_to_sound_v2",
         10.0,
@@ -1041,7 +1048,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 20,
@@ -1065,11 +1072,11 @@
       "type": "PreviewAudio",
       "pos": [
         2860,
-        192
+        166
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 21,
@@ -1093,11 +1100,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        792
+        832
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 22,
@@ -1131,6 +1138,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_brand_golden"
       ]
     },
@@ -1139,11 +1147,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        986
+        1014
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 23,
@@ -1177,6 +1185,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_brand_ocean"
       ]
     },
@@ -1185,11 +1194,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        1180
+        1196
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 24,
@@ -1223,6 +1232,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_brand_velvet"
       ]
     },
@@ -1231,11 +1241,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         2460,
-        1374
+        1378
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 25,
@@ -1269,6 +1279,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "masterwork_brand_mountain"
       ]
     }
@@ -1522,7 +1533,7 @@
         35,
         -1,
         370,
-        542
+        498
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1534,7 +1545,7 @@
         435,
         -1,
         770,
-        446
+        470
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1546,7 +1557,7 @@
         1235,
         -1,
         770,
-        1932
+        2124
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1558,7 +1569,7 @@
         2035,
         -1,
         370,
-        1700
+        1804
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1570,7 +1581,7 @@
         2435,
         -1,
         770,
-        768
+        808
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1580,9 +1591,9 @@
       "title": "Save Clips",
       "bounding": [
         2435,
-        731,
+        771,
         370,
-        812
+        764
       ],
       "color": "#3F789E",
       "font_size": 24,

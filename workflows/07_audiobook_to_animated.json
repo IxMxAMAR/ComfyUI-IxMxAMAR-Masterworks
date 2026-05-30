@@ -11,7 +11,7 @@
       ],
       "size": [
         320,
-        104
+        88
       ],
       "flags": {},
       "order": 1,
@@ -43,11 +43,11 @@
       "type": "KlingDirect_Auth",
       "pos": [
         60,
-        214
+        198
       ],
       "size": [
         320,
-        148
+        136
       ],
       "flags": {},
       "order": 2,
@@ -81,11 +81,11 @@
       "type": "LoadImage",
       "pos": [
         60,
-        412
+        384
       ],
       "size": [
         320,
-        122
+        108
       ],
       "flags": {},
       "order": 3,
@@ -127,7 +127,7 @@
       ],
       "size": [
         320,
-        554
+        596
       ],
       "flags": {},
       "order": 4,
@@ -164,6 +164,7 @@
         "Node name for S&R": "ElevenLabsPro_TTS"
       },
       "widgets_values": [
+        "",
         "Chapter One. The old lighthouse had stood at the edge of Crestfall Bay for two hundred years, its beam sweeping the dark waters every twelve seconds. Maya had grown up counting those sweeps from her bedroom window, falling asleep to their steady rhythm.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
@@ -193,7 +194,7 @@
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 5,
@@ -221,7 +222,7 @@
       ],
       "size": [
         320,
-        278
+        296
       ],
       "flags": {},
       "order": 6,
@@ -296,7 +297,7 @@
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 7,
@@ -330,6 +331,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "audiobook_chapter_01"
       ]
     },
@@ -338,11 +340,11 @@
       "type": "ElevenLabsPro_TTS",
       "pos": [
         460,
-        664
+        706
       ],
       "size": [
         320,
-        554
+        596
       ],
       "flags": {},
       "order": 8,
@@ -379,6 +381,7 @@
         "Node name for S&R": "ElevenLabsPro_TTS"
       },
       "widgets_values": [
+        "",
         "Chapter Two. The letter arrived on a Tuesday \u2014 stamped three times in red ink, the envelope worn as if it had travelled a very long way. Maya recognised her grandmother's handwriting immediately, though the old woman had been dead for seven years.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
@@ -404,11 +407,11 @@
       "type": "PreviewAudio",
       "pos": [
         860,
-        192
+        166
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 9,
@@ -432,11 +435,11 @@
       "type": "KlingDirect_AvatarGen",
       "pos": [
         1260,
-        388
+        406
       ],
       "size": [
         320,
-        278
+        296
       ],
       "flags": {},
       "order": 10,
@@ -507,11 +510,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         1660,
-        254
+        242
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 11,
@@ -545,6 +548,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "audiobook_chapter_02"
       ]
     },
@@ -553,11 +557,11 @@
       "type": "ElevenLabsPro_TTS",
       "pos": [
         460,
-        1268
+        1352
       ],
       "size": [
         320,
-        554
+        596
       ],
       "flags": {},
       "order": 12,
@@ -594,6 +598,7 @@
         "Node name for S&R": "ElevenLabsPro_TTS"
       },
       "widgets_values": [
+        "",
         "Chapter Three. Inside the lighthouse, hidden behind the clockwork mechanism, Maya found the second letter \u2014 and a brass key worn smooth by decades of handling. The key was cold, impossibly cold, even in her warm palm.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
@@ -619,11 +624,11 @@
       "type": "PreviewAudio",
       "pos": [
         860,
-        324
+        272
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 13,
@@ -647,11 +652,11 @@
       "type": "KlingDirect_AvatarGen",
       "pos": [
         1260,
-        716
+        752
       ],
       "size": [
         320,
-        278
+        296
       ],
       "flags": {},
       "order": 14,
@@ -722,11 +727,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         1660,
-        448
+        424
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 15,
@@ -760,6 +765,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "audiobook_chapter_03"
       ]
     },
@@ -768,11 +774,11 @@
       "type": "ElevenLabsPro_TTS",
       "pos": [
         460,
-        1872
+        1998
       ],
       "size": [
         320,
-        554
+        596
       ],
       "flags": {},
       "order": 16,
@@ -809,6 +815,7 @@
         "Node name for S&R": "ElevenLabsPro_TTS"
       },
       "widgets_values": [
+        "",
         "Chapter Four. The door at the base of the lighthouse had never opened in Maya's lifetime. But the key fit perfectly \u2014 and as the hinges ground open for the first time in decades, she understood at last what her grandmother had been protecting all those years.",
         "21m00Tcm4TlvDq8ikWAM",
         "eleven_v3",
@@ -834,11 +841,11 @@
       "type": "PreviewAudio",
       "pos": [
         860,
-        456
+        378
       ],
       "size": [
         320,
-        82
+        56
       ],
       "flags": {},
       "order": 17,
@@ -862,11 +869,11 @@
       "type": "KlingDirect_AvatarGen",
       "pos": [
         1260,
-        1044
+        1098
       ],
       "size": [
         320,
-        278
+        296
       ],
       "flags": {},
       "order": 18,
@@ -937,11 +944,11 @@
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
         1660,
-        642
+        606
       ],
       "size": [
         320,
-        144
+        132
       ],
       "flags": {},
       "order": 19,
@@ -975,6 +982,7 @@
         "Node name for S&R": "KlingDirect_FastVideoSaver"
       },
       "widgets_values": [
+        "",
         "audiobook_chapter_04"
       ]
     }
@@ -1180,7 +1188,7 @@
         35,
         -1,
         370,
-        560
+        518
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1192,7 +1200,7 @@
         435,
         -1,
         1570,
-        640
+        682
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1202,9 +1210,9 @@
       "title": "Chapter 2",
       "bounding": [
         435,
-        131,
+        105,
         1570,
-        1112
+        1222
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1214,9 +1222,9 @@
       "title": "Chapter 3",
       "bounding": [
         435,
-        263,
+        211,
         1570,
-        1584
+        1762
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1226,9 +1234,9 @@
       "title": "Chapter 4",
       "bounding": [
         435,
-        395,
+        317,
         1570,
-        2056
+        2302
       ],
       "color": "#3F789E",
       "font_size": 24,

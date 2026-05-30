@@ -6,12 +6,12 @@
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -43,12 +43,12 @@
       "id": 2,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 2,
@@ -81,12 +81,12 @@
       "id": 3,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        338
+        60,
+        412
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 3,
@@ -115,12 +115,12 @@
       "id": 4,
       "type": "NanoBanana_ImagenGen",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        274
+        360
       ],
       "flags": {},
       "order": 4,
@@ -161,6 +161,7 @@
         "1:1",
         "",
         -1,
+        "randomize",
         "block_low_and_above",
         "dont_allow"
       ]
@@ -169,12 +170,12 @@
       "id": 5,
       "type": "PreviewImage",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 5,
@@ -197,12 +198,12 @@
       "id": 6,
       "type": "NanoBanana_ImageEdit",
       "pos": [
-        1190,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        270
+        424
       ],
       "flags": {},
       "order": 6,
@@ -270,12 +271,12 @@
       "id": 7,
       "type": "NanoBanana_ImageEdit",
       "pos": [
-        1190,
-        350
+        1260,
+        534
       ],
       "size": [
         320,
-        270
+        424
       ],
       "flags": {},
       "order": 7,
@@ -343,12 +344,12 @@
       "id": 8,
       "type": "NanoBanana_ImageEdit",
       "pos": [
-        1190,
-        650
+        1260,
+        1008
       ],
       "size": [
         320,
-        270
+        424
       ],
       "flags": {},
       "order": 8,
@@ -416,12 +417,12 @@
       "id": 9,
       "type": "NanoBanana_ImageEdit",
       "pos": [
-        1190,
-        950
+        1260,
+        1482
       ],
       "size": [
         320,
-        270
+        424
       ],
       "flags": {},
       "order": 9,
@@ -489,12 +490,12 @@
       "id": 10,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 10,
@@ -517,12 +518,12 @@
       "id": 11,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        154
+        1660,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 11,
@@ -545,12 +546,12 @@
       "id": 12,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        258
+        1660,
+        324
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 12,
@@ -573,12 +574,12 @@
       "id": 13,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        362
+        1660,
+        456
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 13,
@@ -601,12 +602,12 @@
       "id": 14,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        50
+        2060,
+        60
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
       "order": 14,
@@ -685,12 +686,12 @@
       "id": 15,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        350
+        2060,
+        476
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
       "order": 15,
@@ -769,12 +770,12 @@
       "id": 16,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        650
+        2060,
+        892
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
       "order": 16,
@@ -853,12 +854,12 @@
       "id": 17,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        950
+        2060,
+        1308
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
       "order": 17,
@@ -937,12 +938,12 @@
       "id": 18,
       "type": "ElevenLabsPro_SFX",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        234
+        316
       ],
       "flags": {},
       "order": 18,
@@ -978,19 +979,20 @@
         0.3,
         false,
         "mp3_44100_192",
-        0
+        0,
+        "randomize"
       ]
     },
     {
       "id": 19,
       "type": "ElevenLabsPro_SFX",
       "pos": [
-        2330,
-        314
+        2460,
+        426
       ],
       "size": [
         320,
-        234
+        316
       ],
       "flags": {},
       "order": 19,
@@ -1026,19 +1028,20 @@
         0.3,
         false,
         "mp3_44100_192",
-        0
+        0,
+        "randomize"
       ]
     },
     {
       "id": 20,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        50
+        2860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 20,
@@ -1061,12 +1064,12 @@
       "id": 21,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        154
+        2860,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 21,
@@ -1089,12 +1092,12 @@
       "id": 22,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        578
+        2460,
+        792
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 22,
@@ -1135,12 +1138,12 @@
       "id": 23,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        736
+        2460,
+        986
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 23,
@@ -1181,12 +1184,12 @@
       "id": 24,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        894
+        2460,
+        1180
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 24,
@@ -1227,12 +1230,12 @@
       "id": 25,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        1052
+        2460,
+        1374
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 25,
@@ -1516,10 +1519,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        452
+        35,
+        -1,
+        370,
+        542
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1528,10 +1531,10 @@
     {
       "title": "Hero Shot",
       "bounding": [
-        410,
-        0,
-        740,
-        344
+        435,
+        -1,
+        770,
+        446
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1540,10 +1543,10 @@
     {
       "title": "Brand Variants",
       "bounding": [
-        1170,
-        0,
-        740,
-        1240
+        1235,
+        -1,
+        770,
+        1932
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1552,10 +1555,10 @@
     {
       "title": "Animate",
       "bounding": [
-        1930,
-        0,
-        360,
-        1240
+        2035,
+        -1,
+        370,
+        1700
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1564,10 +1567,10 @@
     {
       "title": "Soundscape",
       "bounding": [
-        2310,
-        0,
-        740,
-        568
+        2435,
+        -1,
+        770,
+        768
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1576,10 +1579,10 @@
     {
       "title": "Save Clips",
       "bounding": [
-        2310,
-        528,
-        360,
-        672
+        2435,
+        731,
+        370,
+        812
       ],
       "color": "#3F789E",
       "font_size": 24,

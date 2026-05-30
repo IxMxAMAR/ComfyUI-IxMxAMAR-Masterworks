@@ -1,17 +1,17 @@
 {
-  "last_node_id": 15,
-  "last_link_id": 15,
+  "last_node_id": 13,
+  "last_link_id": 13,
   "nodes": [
     {
       "id": 1,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -40,12 +40,12 @@
       "id": 2,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 2,
@@ -75,12 +75,12 @@
       "id": 3,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        338
+        60,
+        412
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 3,
@@ -108,12 +108,12 @@
       "id": 4,
       "type": "KlingDirect_VideoLoader",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        122
+        140
       ],
       "flags": {},
       "order": 4,
@@ -153,12 +153,12 @@
       "id": 5,
       "type": "LoadAudio",
       "pos": [
-        430,
-        202
+        460,
+        250
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 5,
@@ -186,12 +186,12 @@
       "id": 6,
       "type": "ElevenLabsPro_STT",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        342
+        382
       ],
       "flags": {},
       "order": 6,
@@ -216,7 +216,6 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            6,
             7
           ],
           "slot_index": 0
@@ -246,6 +245,7 @@
         0,
         "word",
         0,
+        "randomize",
         0.5,
         0.0,
         "",
@@ -254,55 +254,17 @@
     },
     {
       "id": 7,
-      "type": "ShowText",
+      "type": "NanoBanana_TextGen",
       "pos": [
-        1190,
-        50
+        860,
+        492
       ],
       "size": [
         320,
-        94
+        484
       ],
       "flags": {},
       "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 6,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "transcript_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 8,
-      "type": "NanoBanana_TextGen",
-      "pos": [
-        810,
-        422
-      ],
-      "size": [
-        320,
-        334
-      ],
-      "flags": {},
-      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -327,7 +289,6 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            8,
             9
           ],
           "slot_index": 0
@@ -348,60 +309,23 @@
         "NONE",
         0,
         -1,
+        "randomize",
         ""
       ]
     },
     {
-      "id": 9,
-      "type": "ShowText",
-      "pos": [
-        1190,
-        174
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 8,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "translation_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 10,
+      "id": 8,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -454,6 +378,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -462,18 +387,18 @@
       ]
     },
     {
-      "id": 11,
+      "id": 9,
       "type": "PreviewAudio",
       "pos": [
-        1950,
-        50
+        2060,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -490,18 +415,18 @@
       "widgets_values": []
     },
     {
-      "id": 12,
+      "id": 10,
       "type": "KlingDirect_CloudUploader",
       "pos": [
-        1570,
-        528
+        1660,
+        664
       ],
       "size": [
         320,
-        188
+        210
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -538,18 +463,18 @@
       ]
     },
     {
-      "id": 13,
+      "id": 11,
       "type": "KlingDirect_CloudUploader",
       "pos": [
-        1570,
-        746
+        1660,
+        924
       ],
       "size": [
         320,
-        188
+        210
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -586,18 +511,18 @@
       ]
     },
     {
-      "id": 14,
+      "id": 12,
       "type": "KlingDirect_AdvancedLipSync",
       "pos": [
-        1950,
-        154
+        2060,
+        192
       ],
       "size": [
         320,
-        210
+        242
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -666,18 +591,18 @@
       ]
     },
     {
-      "id": 15,
+      "id": 13,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -725,7 +650,7 @@
       2,
       1,
       0,
-      10,
+      8,
       0,
       "STRING"
     ],
@@ -733,7 +658,7 @@
       3,
       3,
       0,
-      8,
+      7,
       0,
       "STRING"
     ],
@@ -741,7 +666,7 @@
       4,
       2,
       0,
-      14,
+      12,
       0,
       "KLING_AUTH"
     ],
@@ -754,42 +679,26 @@
       "AUDIO"
     ],
     [
-      6,
+      7,
       6,
       0,
       7,
-      0,
+      1,
       "STRING"
     ],
     [
+      9,
       7,
-      6,
       0,
       8,
       1,
       "STRING"
     ],
     [
-      8,
+      10,
       8,
       0,
       9,
-      0,
-      "STRING"
-    ],
-    [
-      9,
-      8,
-      0,
-      10,
-      1,
-      "STRING"
-    ],
-    [
-      10,
-      10,
-      0,
-      11,
       0,
       "AUDIO"
     ],
@@ -797,39 +706,39 @@
       11,
       4,
       0,
-      12,
+      10,
       1,
       "IMAGE"
     ],
     [
       12,
-      10,
+      8,
       0,
-      13,
+      11,
       0,
       "AUDIO"
     ],
     [
       13,
-      12,
+      10,
       0,
-      14,
+      12,
       1,
       "STRING"
     ],
     [
       14,
-      13,
+      11,
       0,
-      14,
+      12,
       2,
       "STRING"
     ],
     [
       15,
-      14,
+      12,
       3,
-      15,
+      13,
       0,
       "STRING"
     ]
@@ -838,10 +747,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        452
+        35,
+        -1,
+        370,
+        542
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -850,10 +759,10 @@
     {
       "title": "Source Material",
       "bounding": [
-        410,
-        0,
-        360,
-        316
+        435,
+        -1,
+        370,
+        380
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -862,10 +771,10 @@
     {
       "title": "Transcribe",
       "bounding": [
-        790,
-        0,
-        740,
-        412
+        835,
+        -1,
+        770,
+        468
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -874,10 +783,10 @@
     {
       "title": "Translate to FR",
       "bounding": [
-        790,
-        124,
-        740,
-        652
+        835,
+        153,
+        770,
+        848
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -886,10 +795,10 @@
     {
       "title": "Synthesise Voice",
       "bounding": [
-        1550,
-        0,
-        740,
-        518
+        1635,
+        -1,
+        770,
+        640
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -898,10 +807,10 @@
     {
       "title": "Upload & Sync",
       "bounding": [
-        1550,
-        104,
-        740,
-        850
+        1635,
+        131,
+        770,
+        1028
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -910,10 +819,10 @@
     {
       "title": "Output",
       "bounding": [
-        2310,
-        0,
-        360,
-        198
+        2435,
+        -1,
+        370,
+        230
       ],
       "color": "#3F789E",
       "font_size": 24,

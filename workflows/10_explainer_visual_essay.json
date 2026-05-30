@@ -1,17 +1,17 @@
 {
-  "last_node_id": 15,
-  "last_link_id": 14,
+  "last_node_id": 12,
+  "last_link_id": 11,
   "nodes": [
     {
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -40,12 +40,12 @@
       "id": 2,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 2,
@@ -73,12 +73,12 @@
       "id": 3,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        298
+        60,
+        368
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 3,
@@ -108,12 +108,12 @@
       "id": 4,
       "type": "LoadImage",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 4,
@@ -147,12 +147,12 @@
       "id": 5,
       "type": "ElevenLabsPro_VoiceSelector",
       "pos": [
-        430,
-        188
+        460,
+        232
       ],
       "size": [
         320,
-        114
+        126
       ],
       "flags": {},
       "order": 5,
@@ -181,12 +181,12 @@
       "id": 6,
       "type": "NanoBanana_Vision",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        256
+        406
       ],
       "flags": {},
       "order": 6,
@@ -226,7 +226,6 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            6,
             7
           ],
           "slot_index": 0
@@ -247,55 +246,17 @@
     },
     {
       "id": 7,
-      "type": "ShowText",
+      "type": "NanoBanana_TextGen",
       "pos": [
-        1190,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        94
+        484
       ],
       "flags": {},
       "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 6,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "analysis_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 8,
-      "type": "NanoBanana_TextGen",
-      "pos": [
-        1570,
-        50
-      ],
-      "size": [
-        320,
-        334
-      ],
-      "flags": {},
-      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -320,7 +281,6 @@
           "name": "text",
           "type": "STRING",
           "links": [
-            8,
             9
           ],
           "slot_index": 0
@@ -341,60 +301,23 @@
         "NONE",
         0,
         -1,
+        "randomize",
         ""
       ]
     },
     {
-      "id": 9,
-      "type": "ShowText",
-      "pos": [
-        1950,
-        50
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 8,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "essay_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 10,
+      "id": 8,
       "type": "KlingDirect_MultiShot",
       "pos": [
-        1570,
-        414
+        1660,
+        594
       ],
       "size": [
         320,
-        262
+        294
       ],
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -441,18 +364,18 @@
       ]
     },
     {
-      "id": 11,
+      "id": 9,
       "type": "PreviewImage",
       "pos": [
-        1950,
-        174
+        2060,
+        214
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 11,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -469,18 +392,18 @@
       "widgets_values": []
     },
     {
-      "id": 12,
+      "id": 10,
       "type": "ElevenLabsPro_TTSTimestamps",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        268
+        356
       ],
       "flags": {},
-      "order": 12,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -536,22 +459,23 @@
         0.75,
         "mp3_44100_192",
         0,
+        "randomize",
         true
       ]
     },
     {
-      "id": 13,
+      "id": 11,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        50
+        2860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -568,18 +492,18 @@
       "widgets_values": []
     },
     {
-      "id": 14,
+      "id": 12,
       "type": "ElevenLabsPro_SubtitleExport",
       "pos": [
-        2330,
-        348
+        2460,
+        466
       ],
       "size": [
         320,
-        154
+        228
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -595,9 +519,7 @@
         {
           "name": "subtitle_text",
           "type": "STRING",
-          "links": [
-            14
-          ],
+          "links": [],
           "slot_index": 0
         }
       ],
@@ -610,44 +532,6 @@
         42,
         6.0
       ]
-    },
-    {
-      "id": 15,
-      "type": "ShowText",
-      "pos": [
-        2710,
-        154
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 14,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "srt_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
     }
   ],
   "links": [
@@ -663,7 +547,7 @@
       2,
       1,
       0,
-      8,
+      7,
       0,
       "STRING"
     ],
@@ -671,7 +555,7 @@
       3,
       2,
       0,
-      12,
+      10,
       0,
       "STRING"
     ],
@@ -679,7 +563,7 @@
       4,
       3,
       0,
-      10,
+      8,
       0,
       "KLING_AUTH"
     ],
@@ -692,34 +576,18 @@
       "IMAGE"
     ],
     [
-      6,
-      6,
-      0,
-      7,
-      0,
-      "STRING"
-    ],
-    [
       7,
       6,
       0,
-      8,
+      7,
       1,
       "STRING"
     ],
     [
-      8,
-      8,
-      0,
       9,
+      7,
       0,
-      "STRING"
-    ],
-    [
-      9,
-      8,
-      0,
-      12,
+      10,
       1,
       "STRING"
     ],
@@ -727,39 +595,31 @@
       10,
       5,
       0,
-      12,
+      10,
       2,
       "STRING"
     ],
     [
       11,
-      10,
+      8,
       0,
-      11,
+      9,
       0,
       "IMAGE"
     ],
     [
       12,
-      12,
+      10,
       0,
-      13,
+      11,
       0,
       "AUDIO"
     ],
     [
       13,
-      12,
+      10,
       1,
-      14,
-      0,
-      "STRING"
-    ],
-    [
-      14,
-      14,
-      0,
-      15,
+      12,
       0,
       "STRING"
     ]
@@ -768,10 +628,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        452
+        35,
+        -1,
+        370,
+        542
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -780,10 +640,10 @@
     {
       "title": "Source",
       "bounding": [
-        410,
-        0,
-        360,
-        322
+        435,
+        -1,
+        370,
+        384
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -792,10 +652,10 @@
     {
       "title": "Analyze",
       "bounding": [
-        790,
-        0,
-        740,
-        326
+        835,
+        -1,
+        770,
+        492
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -804,10 +664,10 @@
     {
       "title": "Write Essay",
       "bounding": [
-        1550,
-        0,
-        740,
-        404
+        1635,
+        -1,
+        770,
+        570
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -816,10 +676,10 @@
     {
       "title": "Keyframes",
       "bounding": [
-        1550,
-        124,
-        740,
-        572
+        1635,
+        153,
+        770,
+        760
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -828,10 +688,10 @@
     {
       "title": "Narrate",
       "bounding": [
-        2310,
-        0,
-        740,
-        338
+        2435,
+        -1,
+        770,
+        442
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -840,10 +700,10 @@
     {
       "title": "Subtitles",
       "bounding": [
-        2310,
-        104,
-        740,
-        418
+        2435,
+        131,
+        770,
+        588
       ],
       "color": "#3F789E",
       "font_size": 24,

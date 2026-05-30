@@ -1,17 +1,17 @@
 {
-  "last_node_id": 18,
-  "last_link_id": 17,
+  "last_node_id": 16,
+  "last_link_id": 15,
   "nodes": [
     {
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -39,12 +39,12 @@
       "id": 2,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 2,
@@ -73,12 +73,12 @@
       "id": 3,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        298
+        60,
+        368
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 3,
@@ -108,12 +108,12 @@
       "id": 4,
       "type": "KlingDirect_VideoLoader",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        122
+        140
       ],
       "flags": {},
       "order": 4,
@@ -153,12 +153,12 @@
       "id": 5,
       "type": "LoadImage",
       "pos": [
-        430,
-        202
+        460,
+        250
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 5,
@@ -192,12 +192,12 @@
       "id": 6,
       "type": "LoadAudio",
       "pos": [
-        430,
-        340
+        460,
+        422
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 6,
@@ -225,12 +225,12 @@
       "id": 7,
       "type": "LoadImage",
       "pos": [
-        430,
-        464
+        460,
+        576
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 7,
@@ -264,12 +264,12 @@
       "id": 8,
       "type": "NanoBananaWholeImageSwap",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        418
+        534
       ],
       "flags": {},
       "order": 8,
@@ -331,9 +331,7 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [
-            8
-          ],
+          "links": [],
           "slot_index": 1
         },
         {
@@ -360,6 +358,7 @@
         "Swap the presenter's face with the identity reference",
         "block_only_high",
         42,
+        "randomize",
         "target",
         "2K",
         false,
@@ -372,12 +371,12 @@
       "id": 9,
       "type": "PreviewImage",
       "pos": [
-        1190,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 9,
@@ -398,55 +397,17 @@
     },
     {
       "id": 10,
-      "type": "ShowText",
+      "type": "ElevenLabsPro_VoiceClone",
       "pos": [
-        1190,
-        154
+        860,
+        644
       ],
       "size": [
         320,
-        94
+        318
       ],
       "flags": {},
       "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 8,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "swap_status",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 11,
-      "type": "ElevenLabsPro_VoiceClone",
-      "pos": [
-        810,
-        498
-      ],
-      "size": [
-        320,
-        272
-      ],
-      "flags": {},
-      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -510,9 +471,7 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [
-            10
-          ],
+          "links": [],
           "slot_index": 1
         }
       ],
@@ -528,56 +487,18 @@
       ]
     },
     {
-      "id": 12,
-      "type": "ShowText",
-      "pos": [
-        1190,
-        278
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 10,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "clone_status",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 13,
+      "id": 11,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
-      "order": 13,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -630,6 +551,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -638,18 +560,18 @@
       ]
     },
     {
-      "id": 14,
+      "id": 12,
       "type": "PreviewAudio",
       "pos": [
-        1950,
-        50
+        2060,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 14,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -666,18 +588,18 @@
       "widgets_values": []
     },
     {
-      "id": 15,
+      "id": 13,
       "type": "KlingDirect_CloudUploader",
       "pos": [
-        1570,
-        528
+        1660,
+        664
       ],
       "size": [
         320,
-        188
+        210
       ],
       "flags": {},
-      "order": 15,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -714,18 +636,18 @@
       ]
     },
     {
-      "id": 16,
+      "id": 14,
       "type": "KlingDirect_CloudUploader",
       "pos": [
-        1570,
-        746
+        1660,
+        924
       ],
       "size": [
         320,
-        188
+        210
       ],
       "flags": {},
-      "order": 16,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -762,18 +684,18 @@
       ]
     },
     {
-      "id": 17,
+      "id": 15,
       "type": "KlingDirect_AdvancedLipSync",
       "pos": [
-        1950,
-        154
+        2060,
+        192
       ],
       "size": [
         320,
-        210
+        242
       ],
       "flags": {},
-      "order": 17,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -842,18 +764,18 @@
       ]
     },
     {
-      "id": 18,
+      "id": 16,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 18,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -901,7 +823,7 @@
       2,
       2,
       0,
-      11,
+      10,
       0,
       "STRING"
     ],
@@ -909,7 +831,7 @@
       3,
       2,
       0,
-      13,
+      11,
       0,
       "STRING"
     ],
@@ -917,7 +839,7 @@
       4,
       3,
       0,
-      17,
+      15,
       0,
       "KLING_AUTH"
     ],
@@ -946,50 +868,34 @@
       "IMAGE"
     ],
     [
-      8,
-      8,
-      1,
-      10,
-      0,
-      "STRING"
-    ],
-    [
       9,
       6,
       0,
-      11,
+      10,
       1,
       "AUDIO"
     ],
     [
+      11,
       10,
-      11,
-      1,
-      12,
       0,
-      "STRING"
-    ],
-    [
       11,
-      11,
-      0,
-      13,
       1,
       "STRING"
     ],
     [
       12,
+      11,
+      0,
+      12,
+      0,
+      "AUDIO"
+    ],
+    [
       13,
+      11,
       0,
       14,
-      0,
-      "AUDIO"
-    ],
-    [
-      13,
-      13,
-      0,
-      16,
       0,
       "AUDIO"
     ],
@@ -997,31 +903,31 @@
       14,
       4,
       0,
-      15,
+      13,
       1,
       "IMAGE"
     ],
     [
       15,
-      15,
+      13,
       0,
-      17,
+      15,
       1,
       "STRING"
     ],
     [
       16,
-      16,
+      14,
       0,
-      17,
+      15,
       2,
       "STRING"
     ],
     [
       17,
-      17,
+      15,
       3,
-      18,
+      16,
       0,
       "STRING"
     ]
@@ -1030,10 +936,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        452
+        35,
+        -1,
+        370,
+        542
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1042,10 +948,10 @@
     {
       "title": "Source Material",
       "bounding": [
-        410,
-        0,
-        360,
-        592
+        435,
+        -1,
+        370,
+        724
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1054,10 +960,10 @@
     {
       "title": "Face Swap",
       "bounding": [
-        790,
-        0,
-        740,
-        488
+        835,
+        -1,
+        770,
+        620
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1066,10 +972,10 @@
     {
       "title": "Voice Clone",
       "bounding": [
-        790,
-        228,
-        740,
-        562
+        835,
+        285,
+        770,
+        702
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1078,10 +984,10 @@
     {
       "title": "Dub Script",
       "bounding": [
-        1550,
-        0,
-        740,
-        518
+        1635,
+        -1,
+        770,
+        640
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1090,10 +996,10 @@
     {
       "title": "Upload & Sync",
       "bounding": [
-        1550,
-        104,
-        740,
-        850
+        1635,
+        131,
+        770,
+        1028
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1102,10 +1008,10 @@
     {
       "title": "Output",
       "bounding": [
-        2310,
-        0,
-        360,
-        198
+        2435,
+        -1,
+        370,
+        230
       ],
       "color": "#3F789E",
       "font_size": 24,

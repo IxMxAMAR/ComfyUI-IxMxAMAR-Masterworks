@@ -1,17 +1,17 @@
 {
-  "last_node_id": 22,
-  "last_link_id": 26,
+  "last_node_id": 19,
+  "last_link_id": 23,
   "nodes": [
     {
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -42,12 +42,12 @@
       "id": 2,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 2,
@@ -79,12 +79,12 @@
       "id": 3,
       "type": "NanoBanana_ImageGen",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        356
+        516
       ],
       "flags": {},
       "order": 3,
@@ -146,6 +146,7 @@
         "NONE",
         1.0,
         -1,
+        "randomize",
         1,
         ""
       ]
@@ -154,12 +155,12 @@
       "id": 4,
       "type": "PreviewImage",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 4,
@@ -182,12 +183,12 @@
       "id": 5,
       "type": "LoadImage",
       "pos": [
-        430,
-        436
+        460,
+        626
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 5,
@@ -221,12 +222,12 @@
       "id": 6,
       "type": "LoadImage",
       "pos": [
-        430,
-        574
+        460,
+        798
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 6,
@@ -260,12 +261,12 @@
       "id": 7,
       "type": "LoadImage",
       "pos": [
-        430,
-        712
+        460,
+        970
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 7,
@@ -299,12 +300,12 @@
       "id": 8,
       "type": "NanoBananaWholeImageSwap",
       "pos": [
-        1190,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        418
+        534
       ],
       "flags": {},
       "order": 8,
@@ -367,9 +368,7 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [
-            18
-          ],
+          "links": [],
           "slot_index": 1
         },
         {
@@ -396,6 +395,7 @@
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
         "block_only_high",
         42,
+        "randomize",
         "target",
         "2K",
         false,
@@ -408,12 +408,12 @@
       "id": 9,
       "type": "NanoBananaWholeImageSwap",
       "pos": [
-        1190,
-        498
+        1260,
+        644
       ],
       "size": [
         320,
-        418
+        534
       ],
       "flags": {},
       "order": 9,
@@ -476,9 +476,7 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [
-            19
-          ],
+          "links": [],
           "slot_index": 1
         },
         {
@@ -505,6 +503,7 @@
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
         "block_only_high",
         42,
+        "randomize",
         "target",
         "2K",
         false,
@@ -517,12 +516,12 @@
       "id": 10,
       "type": "NanoBananaWholeImageSwap",
       "pos": [
-        1190,
-        946
+        1260,
+        1228
       ],
       "size": [
         320,
-        418
+        534
       ],
       "flags": {},
       "order": 10,
@@ -585,9 +584,7 @@
         {
           "name": "status",
           "type": "STRING",
-          "links": [
-            20
-          ],
+          "links": [],
           "slot_index": 1
         },
         {
@@ -614,6 +611,7 @@
         "Female astronaut hero, short dark hair, amber eyes, determined expression",
         "block_only_high",
         42,
+        "randomize",
         "target",
         "2K",
         false,
@@ -626,12 +624,12 @@
       "id": 11,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 11,
@@ -654,12 +652,12 @@
       "id": 12,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        154
+        1660,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 12,
@@ -682,12 +680,12 @@
       "id": 13,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        258
+        1660,
+        324
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 13,
@@ -708,131 +706,17 @@
     },
     {
       "id": 14,
-      "type": "ShowText",
+      "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1570,
-        362
+        2060,
+        60
       ],
       "size": [
         320,
-        94
+        366
       ],
       "flags": {},
       "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 18,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "status1",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 15,
-      "type": "ShowText",
-      "pos": [
-        1570,
-        486
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 19,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "status2",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 16,
-      "type": "ShowText",
-      "pos": [
-        1570,
-        610
-      ],
-      "size": [
-        320,
-        94
-      ],
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 20,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "status3",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 17,
-      "type": "KlingDirect_ImageToVideo",
-      "pos": [
-        1950,
-        50
-      ],
-      "size": [
-        320,
-        270
-      ],
-      "flags": {},
-      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -905,18 +789,18 @@
       ]
     },
     {
-      "id": 18,
+      "id": 15,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        350
+        2060,
+        476
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -989,18 +873,18 @@
       ]
     },
     {
-      "id": 19,
+      "id": 16,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        650
+        2060,
+        892
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 19,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -1073,18 +957,18 @@
       ]
     },
     {
-      "id": 20,
+      "id": 17,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 20,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1119,18 +1003,18 @@
       ]
     },
     {
-      "id": 21,
+      "id": 18,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        208
+        2460,
+        254
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 21,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1165,18 +1049,18 @@
       ]
     },
     {
-      "id": 22,
+      "id": 19,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        366
+        2460,
+        448
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 22,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1248,7 +1132,7 @@
       5,
       2,
       0,
-      17,
+      14,
       0,
       "KLING_AUTH"
     ],
@@ -1256,7 +1140,7 @@
       6,
       2,
       0,
-      18,
+      15,
       0,
       "KLING_AUTH"
     ],
@@ -1264,7 +1148,7 @@
       7,
       2,
       0,
-      19,
+      16,
       0,
       "KLING_AUTH"
     ],
@@ -1349,34 +1233,10 @@
       "IMAGE"
     ],
     [
-      18,
-      8,
-      1,
-      14,
-      0,
-      "STRING"
-    ],
-    [
-      19,
-      9,
-      1,
-      15,
-      0,
-      "STRING"
-    ],
-    [
-      20,
-      10,
-      1,
-      16,
-      0,
-      "STRING"
-    ],
-    [
       21,
       8,
       0,
-      17,
+      14,
       1,
       "IMAGE"
     ],
@@ -1384,7 +1244,7 @@
       22,
       9,
       0,
-      18,
+      15,
       1,
       "IMAGE"
     ],
@@ -1392,31 +1252,31 @@
       23,
       10,
       0,
-      19,
+      16,
       1,
       "IMAGE"
     ],
     [
       24,
-      17,
+      14,
       3,
-      20,
+      17,
       0,
       "STRING"
     ],
     [
       25,
-      18,
+      15,
       3,
-      21,
+      18,
       0,
       "STRING"
     ],
     [
       26,
-      19,
+      16,
       3,
-      22,
+      19,
       0,
       "STRING"
     ]
@@ -1425,10 +1285,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        328
+        35,
+        -1,
+        370,
+        388
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1437,10 +1297,10 @@
     {
       "title": "Character Design",
       "bounding": [
-        410,
-        0,
-        740,
-        426
+        435,
+        -1,
+        770,
+        602
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1449,10 +1309,10 @@
     {
       "title": "Scene Backgrounds",
       "bounding": [
-        410,
-        386,
-        360,
-        454
+        435,
+        565,
+        370,
+        552
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1461,10 +1321,10 @@
     {
       "title": "Identity Lock",
       "bounding": [
-        1170,
-        0,
-        360,
-        1384
+        1235,
+        -1,
+        370,
+        1788
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1473,10 +1333,10 @@
     {
       "title": "Scene Previews",
       "bounding": [
-        1550,
-        0,
-        360,
-        724
+        1635,
+        -1,
+        370,
+        894
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1485,10 +1345,10 @@
     {
       "title": "Animate",
       "bounding": [
-        1930,
-        0,
-        360,
-        940
+        2035,
+        -1,
+        370,
+        1284
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1497,10 +1357,10 @@
     {
       "title": "Save",
       "bounding": [
-        2310,
-        0,
-        360,
-        514
+        2435,
+        -1,
+        370,
+        618
       ],
       "color": "#3F789E",
       "font_size": 24,

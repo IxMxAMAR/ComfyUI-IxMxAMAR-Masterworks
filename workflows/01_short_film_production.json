@@ -1,17 +1,17 @@
 {
-  "last_node_id": 27,
-  "last_link_id": 28,
+  "last_node_id": 26,
+  "last_link_id": 27,
   "nodes": [
     {
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -43,12 +43,12 @@
       "id": 2,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 2,
@@ -81,12 +81,12 @@
       "id": 3,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        338
+        60,
+        412
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 3,
@@ -116,12 +116,12 @@
       "id": 4,
       "type": "NanoBanana_TextGen",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        334
+        484
       ],
       "flags": {},
       "order": 4,
@@ -140,9 +140,7 @@
         {
           "name": "text",
           "type": "STRING",
-          "links": [
-            13
-          ],
+          "links": [],
           "slot_index": 0
         }
       ],
@@ -162,60 +160,23 @@
         "NONE",
         0,
         -1,
+        "randomize",
         ""
       ]
     },
     {
       "id": 5,
-      "type": "ShowText",
+      "type": "NanoBanana_ImageGen",
       "pos": [
-        810,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        94
+        516
       ],
       "flags": {},
       "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 13,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "script_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 6,
-      "type": "NanoBanana_ImageGen",
-      "pos": [
-        1190,
-        50
-      ],
-      "size": [
-        320,
-        356
-      ],
-      "flags": {},
-      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -272,23 +233,24 @@
         "NONE",
         1.0,
         -1,
+        "randomize",
         1,
         ""
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "type": "NanoBanana_ImageGen",
       "pos": [
-        1190,
-        436
+        1260,
+        626
       ],
       "size": [
         320,
-        356
+        516
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -345,23 +307,24 @@
         "NONE",
         1.0,
         -1,
+        "randomize",
         1,
         ""
       ]
     },
     {
-      "id": 8,
+      "id": 7,
       "type": "NanoBanana_ImageGen",
       "pos": [
-        1190,
-        822
+        1260,
+        1192
       ],
       "size": [
         320,
-        356
+        516
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -418,23 +381,24 @@
         "NONE",
         1.0,
         -1,
+        "randomize",
         1,
         ""
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "type": "NanoBanana_ImageGen",
       "pos": [
-        1190,
-        1208
+        1260,
+        1758
       ],
       "size": [
         320,
-        356
+        516
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -491,23 +455,24 @@
         "NONE",
         1.0,
         -1,
+        "randomize",
         1,
         ""
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -524,18 +489,18 @@
       "widgets_values": []
     },
     {
-      "id": 11,
+      "id": 10,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        154
+        1660,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -552,18 +517,18 @@
       "widgets_values": []
     },
     {
-      "id": 12,
+      "id": 11,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        258
+        1660,
+        324
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -580,18 +545,18 @@
       "widgets_values": []
     },
     {
-      "id": 13,
+      "id": 12,
       "type": "PreviewImage",
       "pos": [
-        1570,
-        362
+        1660,
+        456
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -608,18 +573,18 @@
       "widgets_values": []
     },
     {
-      "id": 14,
+      "id": 13,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        50
+        2060,
+        60
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -692,18 +657,18 @@
       ]
     },
     {
-      "id": 15,
+      "id": 14,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        350
+        2060,
+        476
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -776,18 +741,18 @@
       ]
     },
     {
-      "id": 16,
+      "id": 15,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        650
+        2060,
+        892
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -860,18 +825,18 @@
       ]
     },
     {
-      "id": 17,
+      "id": 16,
       "type": "KlingDirect_ImageToVideo",
       "pos": [
-        1950,
-        950
+        2060,
+        1308
       ],
       "size": [
         320,
-        270
+        366
       ],
       "flags": {},
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -944,18 +909,18 @@
       ]
     },
     {
-      "id": 18,
+      "id": 17,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1000,6 +965,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -1008,18 +974,18 @@
       ]
     },
     {
-      "id": 19,
+      "id": 18,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        50
+        2860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1036,18 +1002,18 @@
       "widgets_values": []
     },
     {
-      "id": 20,
+      "id": 19,
       "type": "ElevenLabsPro_SFX",
       "pos": [
-        2330,
-        528
+        2460,
+        664
       ],
       "size": [
         320,
-        234
+        316
       ],
       "flags": {},
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1080,22 +1046,23 @@
         0.3,
         false,
         "mp3_44100_192",
-        0
+        0,
+        "randomize"
       ]
     },
     {
-      "id": 21,
+      "id": 20,
       "type": "ElevenLabsPro_Music",
       "pos": [
-        2330,
-        792
+        2460,
+        1030
       ],
       "size": [
         320,
-        294
+        440
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -1126,6 +1093,7 @@
         "music_v1",
         90.0,
         0,
+        "randomize",
         true,
         true,
         false,
@@ -1135,18 +1103,18 @@
       ]
     },
     {
-      "id": 22,
+      "id": 21,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        154
+        2860,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1163,18 +1131,18 @@
       "widgets_values": []
     },
     {
-      "id": 23,
+      "id": 22,
       "type": "PreviewAudio",
       "pos": [
-        2710,
-        258
+        2860,
+        324
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1191,18 +1159,18 @@
       "widgets_values": []
     },
     {
-      "id": 24,
+      "id": 23,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        1116
+        2460,
+        1520
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -1237,18 +1205,18 @@
       ]
     },
     {
-      "id": 25,
+      "id": 24,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        1274
+        2460,
+        1714
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1283,18 +1251,18 @@
       ]
     },
     {
-      "id": 26,
+      "id": 25,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        1432
+        2460,
+        1908
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -1329,18 +1297,18 @@
       ]
     },
     {
-      "id": 27,
+      "id": 26,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        2330,
-        1590
+        2460,
+        2102
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1388,7 +1356,7 @@
       2,
       1,
       0,
-      6,
+      5,
       0,
       "STRING"
     ],
@@ -1396,7 +1364,7 @@
       3,
       1,
       0,
-      7,
+      6,
       0,
       "STRING"
     ],
@@ -1404,7 +1372,7 @@
       4,
       1,
       0,
-      8,
+      7,
       0,
       "STRING"
     ],
@@ -1412,7 +1380,7 @@
       5,
       1,
       0,
-      9,
+      8,
       0,
       "STRING"
     ],
@@ -1420,12 +1388,20 @@
       6,
       3,
       0,
-      18,
+      17,
       0,
       "STRING"
     ],
     [
       7,
+      3,
+      0,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      8,
       3,
       0,
       20,
@@ -1433,18 +1409,10 @@
       "STRING"
     ],
     [
-      8,
-      3,
-      0,
-      21,
-      0,
-      "STRING"
-    ],
-    [
       9,
       2,
       0,
-      14,
+      13,
       0,
       "KLING_AUTH"
     ],
@@ -1452,7 +1420,7 @@
       10,
       2,
       0,
-      15,
+      14,
       0,
       "KLING_AUTH"
     ],
@@ -1460,7 +1428,7 @@
       11,
       2,
       0,
-      16,
+      15,
       0,
       "KLING_AUTH"
     ],
@@ -1468,20 +1436,20 @@
       12,
       2,
       0,
-      17,
+      16,
       0,
       "KLING_AUTH"
     ],
     [
-      13,
-      4,
-      0,
+      14,
       5,
       0,
-      "STRING"
+      9,
+      0,
+      "IMAGE"
     ],
     [
-      14,
+      15,
       6,
       0,
       10,
@@ -1489,7 +1457,7 @@
       "IMAGE"
     ],
     [
-      15,
+      16,
       7,
       0,
       11,
@@ -1497,7 +1465,7 @@
       "IMAGE"
     ],
     [
-      16,
+      17,
       8,
       0,
       12,
@@ -1505,23 +1473,23 @@
       "IMAGE"
     ],
     [
-      17,
-      9,
+      18,
+      5,
       0,
       13,
-      0,
-      "IMAGE"
-    ],
-    [
-      18,
-      6,
-      0,
-      14,
       1,
       "IMAGE"
     ],
     [
       19,
+      6,
+      0,
+      14,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
       7,
       0,
       15,
@@ -1529,7 +1497,7 @@
       "IMAGE"
     ],
     [
-      20,
+      21,
       8,
       0,
       16,
@@ -1537,23 +1505,23 @@
       "IMAGE"
     ],
     [
-      21,
-      9,
-      0,
-      17,
-      1,
-      "IMAGE"
-    ],
-    [
       22,
-      14,
+      13,
       3,
-      24,
+      23,
       0,
       "STRING"
     ],
     [
       23,
+      14,
+      3,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      24,
       15,
       3,
       25,
@@ -1561,7 +1529,7 @@
       "STRING"
     ],
     [
-      24,
+      25,
       16,
       3,
       26,
@@ -1569,34 +1537,26 @@
       "STRING"
     ],
     [
-      25,
-      17,
-      3,
-      27,
-      0,
-      "STRING"
-    ],
-    [
       26,
-      18,
+      17,
       0,
-      19,
+      18,
       0,
       "AUDIO"
     ],
     [
       27,
-      20,
+      19,
       0,
-      22,
+      21,
       0,
       "AUDIO"
     ],
     [
       28,
-      21,
+      20,
       0,
-      23,
+      22,
       0,
       "AUDIO"
     ]
@@ -1605,10 +1565,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        452
+        35,
+        -1,
+        370,
+        542
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1617,10 +1577,10 @@
     {
       "title": "Script",
       "bounding": [
-        410,
-        0,
-        740,
-        404
+        435,
+        -1,
+        770,
+        570
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1629,10 +1589,10 @@
     {
       "title": "Scene Images",
       "bounding": [
-        1170,
-        0,
-        740,
-        1584
+        1235,
+        -1,
+        770,
+        2300
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1641,10 +1601,10 @@
     {
       "title": "Animate Scenes",
       "bounding": [
-        1930,
-        0,
-        360,
-        1240
+        2035,
+        -1,
+        370,
+        1700
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1653,10 +1613,10 @@
     {
       "title": "Narration",
       "bounding": [
-        2310,
-        0,
-        740,
-        518
+        2435,
+        -1,
+        770,
+        640
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1665,10 +1625,10 @@
     {
       "title": "Soundscape",
       "bounding": [
-        2310,
-        104,
-        740,
-        1002
+        2435,
+        131,
+        770,
+        1364
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1677,10 +1637,10 @@
     {
       "title": "Save",
       "bounding": [
-        2310,
-        1066,
-        360,
-        672
+        2435,
+        1459,
+        370,
+        812
       ],
       "color": "#3F789E",
       "font_size": 24,

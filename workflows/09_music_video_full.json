@@ -1,17 +1,17 @@
 {
-  "last_node_id": 15,
-  "last_link_id": 15,
+  "last_node_id": 14,
+  "last_link_id": 14,
   "nodes": [
     {
       "id": 1,
       "type": "NanoBanana_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -41,12 +41,12 @@
       "id": 2,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 2,
@@ -75,12 +75,12 @@
       "id": 3,
       "type": "NanoBanana_MusicGen",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        214
+        294
       ],
       "flags": {},
       "order": 3,
@@ -116,6 +116,7 @@
         "",
         "",
         0,
+        "randomize",
         1
       ]
     },
@@ -123,12 +124,12 @@
       "id": 4,
       "type": "PreviewAudio",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 4,
@@ -151,12 +152,12 @@
       "id": 5,
       "type": "NanoBanana_ImagenGen",
       "pos": [
-        430,
-        294
+        460,
+        404
       ],
       "size": [
         320,
-        274
+        360
       ],
       "flags": {},
       "order": 5,
@@ -194,6 +195,7 @@
         "1:1",
         "",
         -1,
+        "randomize",
         "block_low_and_above",
         "dont_allow"
       ]
@@ -202,12 +204,12 @@
       "id": 6,
       "type": "PreviewImage",
       "pos": [
-        810,
-        154
+        860,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 6,
@@ -230,12 +232,12 @@
       "id": 7,
       "type": "NanoBanana_VideoGen",
       "pos": [
-        1190,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        308
+        400
       ],
       "flags": {},
       "order": 7,
@@ -259,9 +261,7 @@
         {
           "name": "video_file_path",
           "type": "STRING",
-          "links": [
-            9
-          ],
+          "links": [],
           "slot_index": 0
         },
         {
@@ -283,6 +283,7 @@
         1,
         "",
         -1,
+        "randomize",
         8,
         600,
         10
@@ -290,55 +291,17 @@
     },
     {
       "id": 8,
-      "type": "ShowText",
+      "type": "ElevenLabsPro_SFX",
       "pos": [
-        1570,
-        50
+        1260,
+        510
       ],
       "size": [
         320,
-        94
+        316
       ],
       "flags": {},
       "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 9,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "recipe_id": "video_out",
-        "Node name for S&R": "ShowText"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 9,
-      "type": "ElevenLabsPro_SFX",
-      "pos": [
-        1190,
-        388
-      ],
-      "size": [
-        320,
-        234
-      ],
-      "flags": {},
-      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -372,22 +335,23 @@
         0.3,
         false,
         "mp3_44100_192",
-        0
+        0,
+        "randomize"
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "type": "ElevenLabsPro_SFX",
       "pos": [
-        1190,
-        652
+        1260,
+        876
       ],
       "size": [
         320,
-        234
+        316
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -421,22 +385,23 @@
         0.3,
         false,
         "mp3_44100_192",
-        0
+        0,
+        "randomize"
       ]
     },
     {
-      "id": 11,
+      "id": 10,
       "type": "PreviewAudio",
       "pos": [
-        1570,
-        174
+        1660,
+        214
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -453,18 +418,18 @@
       "widgets_values": []
     },
     {
-      "id": 12,
+      "id": 11,
       "type": "PreviewAudio",
       "pos": [
-        1570,
-        278
+        1660,
+        346
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -481,18 +446,18 @@
       "widgets_values": []
     },
     {
-      "id": 13,
+      "id": 12,
       "type": "ElevenLabsPro_AudioConcat",
       "pos": [
-        1950,
-        50
+        2060,
+        60
       ],
       "size": [
         320,
-        192
+        230
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -555,18 +520,18 @@
       ]
     },
     {
-      "id": 14,
+      "id": 13,
       "type": "PreviewAudio",
       "pos": [
-        2330,
-        50
+        2460,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -583,18 +548,18 @@
       "widgets_values": []
     },
     {
-      "id": 15,
+      "id": 14,
       "type": "SaveImage",
       "pos": [
-        2330,
-        154
+        2460,
+        192
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -642,7 +607,7 @@
       4,
       2,
       0,
-      9,
+      8,
       0,
       "STRING"
     ],
@@ -650,7 +615,7 @@
       5,
       2,
       0,
-      10,
+      9,
       0,
       "STRING"
     ],
@@ -674,20 +639,20 @@
       8,
       5,
       0,
-      15,
+      14,
       0,
       "IMAGE"
     ],
     [
-      9,
-      7,
-      0,
+      10,
       8,
       0,
-      "STRING"
+      10,
+      0,
+      "AUDIO"
     ],
     [
-      10,
+      11,
       9,
       0,
       11,
@@ -695,26 +660,18 @@
       "AUDIO"
     ],
     [
-      11,
-      10,
-      0,
       12,
-      0,
-      "AUDIO"
-    ],
-    [
-      12,
-      10,
-      0,
-      13,
-      0,
-      "AUDIO"
-    ],
-    [
-      13,
       9,
       0,
+      12,
+      0,
+      "AUDIO"
+    ],
+    [
       13,
+      8,
+      0,
+      12,
       1,
       "AUDIO"
     ],
@@ -722,15 +679,15 @@
       14,
       3,
       0,
-      13,
+      12,
       2,
       "AUDIO"
     ],
     [
       15,
-      13,
+      12,
       0,
-      14,
+      13,
       0,
       "AUDIO"
     ]
@@ -739,10 +696,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        288
+        35,
+        -1,
+        370,
+        344
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -751,10 +708,10 @@
     {
       "title": "Compose",
       "bounding": [
-        410,
-        0,
-        740,
-        284
+        435,
+        -1,
+        770,
+        380
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -763,10 +720,10 @@
     {
       "title": "Album Art",
       "bounding": [
-        410,
-        104,
-        740,
-        484
+        435,
+        131,
+        770,
+        658
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -775,10 +732,10 @@
     {
       "title": "Video",
       "bounding": [
-        1170,
-        0,
-        740,
-        378
+        1235,
+        -1,
+        770,
+        486
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -787,10 +744,10 @@
     {
       "title": "SFX Layers",
       "bounding": [
-        1170,
-        124,
-        740,
-        782
+        1235,
+        153,
+        770,
+        1064
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -799,10 +756,10 @@
     {
       "title": "Mix & Save",
       "bounding": [
-        1930,
-        0,
-        740,
-        268
+        2035,
+        -1,
+        770,
+        322
       ],
       "color": "#3F789E",
       "font_size": 24,

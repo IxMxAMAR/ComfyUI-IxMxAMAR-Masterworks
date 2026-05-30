@@ -6,12 +6,12 @@
       "id": 1,
       "type": "ElevenLabsPro_APIKey",
       "pos": [
-        50,
-        50
+        60,
+        60
       ],
       "size": [
         320,
-        94
+        104
       ],
       "flags": {},
       "order": 1,
@@ -42,12 +42,12 @@
       "id": 2,
       "type": "KlingDirect_Auth",
       "pos": [
-        50,
-        174
+        60,
+        214
       ],
       "size": [
         320,
-        134
+        148
       ],
       "flags": {},
       "order": 2,
@@ -80,12 +80,12 @@
       "id": 3,
       "type": "LoadImage",
       "pos": [
-        50,
-        338
+        60,
+        412
       ],
       "size": [
         320,
-        108
+        122
       ],
       "flags": {},
       "order": 3,
@@ -122,12 +122,12 @@
       "id": 4,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        430,
-        50
+        460,
+        60
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
       "order": 4,
@@ -176,6 +176,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -187,12 +188,12 @@
       "id": 5,
       "type": "PreviewAudio",
       "pos": [
-        810,
-        50
+        860,
+        60
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 5,
@@ -215,12 +216,12 @@
       "id": 6,
       "type": "KlingDirect_AvatarGen",
       "pos": [
-        1190,
-        50
+        1260,
+        60
       ],
       "size": [
         320,
-        190
+        278
       ],
       "flags": {},
       "order": 6,
@@ -290,12 +291,12 @@
       "id": 7,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        1570,
-        50
+        1660,
+        60
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 7,
@@ -336,12 +337,12 @@
       "id": 8,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        430,
-        528
+        460,
+        664
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
       "order": 8,
@@ -390,6 +391,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -401,12 +403,12 @@
       "id": 9,
       "type": "PreviewAudio",
       "pos": [
-        810,
-        154
+        860,
+        192
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 9,
@@ -429,12 +431,12 @@
       "id": 10,
       "type": "KlingDirect_AvatarGen",
       "pos": [
-        1190,
-        270
+        1260,
+        388
       ],
       "size": [
         320,
-        190
+        278
       ],
       "flags": {},
       "order": 10,
@@ -504,12 +506,12 @@
       "id": 11,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        1570,
-        208
+        1660,
+        254
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 11,
@@ -550,12 +552,12 @@
       "id": 12,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        430,
-        1006
+        460,
+        1268
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
       "order": 12,
@@ -604,6 +606,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -615,12 +618,12 @@
       "id": 13,
       "type": "PreviewAudio",
       "pos": [
-        810,
-        258
+        860,
+        324
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 13,
@@ -643,12 +646,12 @@
       "id": 14,
       "type": "KlingDirect_AvatarGen",
       "pos": [
-        1190,
-        490
+        1260,
+        716
       ],
       "size": [
         320,
-        190
+        278
       ],
       "flags": {},
       "order": 14,
@@ -718,12 +721,12 @@
       "id": 15,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        1570,
-        366
+        1660,
+        448
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 15,
@@ -764,12 +767,12 @@
       "id": 16,
       "type": "ElevenLabsPro_TTS",
       "pos": [
-        430,
-        1484
+        460,
+        1872
       ],
       "size": [
         320,
-        448
+        554
       ],
       "flags": {},
       "order": 16,
@@ -818,6 +821,7 @@
         "auto",
         "mp3_44100_192",
         0,
+        "randomize",
         "",
         "",
         false,
@@ -829,12 +833,12 @@
       "id": 17,
       "type": "PreviewAudio",
       "pos": [
-        810,
-        362
+        860,
+        456
       ],
       "size": [
         320,
-        74
+        82
       ],
       "flags": {},
       "order": 17,
@@ -857,12 +861,12 @@
       "id": 18,
       "type": "KlingDirect_AvatarGen",
       "pos": [
-        1190,
-        710
+        1260,
+        1044
       ],
       "size": [
         320,
-        190
+        278
       ],
       "flags": {},
       "order": 18,
@@ -932,12 +936,12 @@
       "id": 19,
       "type": "KlingDirect_FastVideoSaver",
       "pos": [
-        1570,
-        524
+        1660,
+        642
       ],
       "size": [
         320,
-        128
+        144
       ],
       "flags": {},
       "order": 19,
@@ -1173,10 +1177,10 @@
     {
       "title": "Setup",
       "bounding": [
-        30,
-        0,
-        360,
-        466
+        35,
+        -1,
+        370,
+        560
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1185,10 +1189,10 @@
     {
       "title": "Chapter 1",
       "bounding": [
-        410,
-        0,
-        1500,
-        518
+        435,
+        -1,
+        1570,
+        640
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1197,10 +1201,10 @@
     {
       "title": "Chapter 2",
       "bounding": [
-        410,
-        104,
-        1500,
-        892
+        435,
+        131,
+        1570,
+        1112
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1209,10 +1213,10 @@
     {
       "title": "Chapter 3",
       "bounding": [
-        410,
-        208,
-        1500,
-        1266
+        435,
+        263,
+        1570,
+        1584
       ],
       "color": "#3F789E",
       "font_size": 24,
@@ -1221,10 +1225,10 @@
     {
       "title": "Chapter 4",
       "bounding": [
-        410,
-        312,
-        1500,
-        1640
+        435,
+        395,
+        1570,
+        2056
       ],
       "color": "#3F789E",
       "font_size": 24,
